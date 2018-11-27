@@ -20,7 +20,7 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 112 112)
+	(rect 16 16 128 112)
 	(text "flipflopD" (rect 5 0 58 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
@@ -38,20 +38,27 @@ refer to the applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
-		(pt 96 32)
-		(output)
-		(text "Q" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
-		(text "Q" (rect 66 27 75 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
+		(pt 0 64)
+		(input)
+		(text "enable" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "enable" (rect 21 59 61 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 96 48)
+		(pt 112 32)
+		(output)
+		(text "Q" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
+		(text "Q" (rect 82 27 91 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 112 32)(pt 96 32))
+	)
+	(port
+		(pt 112 48)
 		(output)
 		(text "Q1" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
-		(text "Q1" (rect 58 43 75 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 96 48)(pt 80 48))
+		(text "Q1" (rect 74 43 91 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 112 48)(pt 96 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 80))
+		(rectangle (rect 16 16 96 80))
 	)
 )
