@@ -72,3 +72,7 @@ set_global_assignment -name BDF_FILE mux32.bdf
 set_global_assignment -name BDF_FILE demux32.bdf
 set_global_assignment -name BDF_FILE demux32x32.bdf
 set_global_assignment -name BDF_FILE 32sel.bdf
+set_global_assignment -name BDF_FILE 128sel32.bdf
+set_global_assignment -name BDF_FILE 256sel32.bdf
+set_global_assignment -name BDF_FILE 512sel32.bdf
+set_global_assignment -name BDF_FILE 1024sel32.bdf
