@@ -20,7 +20,7 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 128 336)
+	(rect 16 16 176 336)
 	(text "reg_bank" (rect 5 0 60 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 299 24 316)(font "Intel Clear" ))
 	(port
@@ -142,7 +142,21 @@ refer to the applicable agreement for further details.
 		(text "wb[31..0]" (rect 21 283 77 302)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 288)(pt 16 288)(line_width 3))
 	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "rs[31..0]" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "rs[31..0]" (rect 90 27 139 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "rt[31..0]" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "rt[31..0]" (rect 91 43 139 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 160 48)(pt 144 48)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 96 304))
+		(rectangle (rect 16 16 144 304))
 	)
 )
