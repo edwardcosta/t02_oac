@@ -23,7 +23,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 128 192 296 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in[15..0]" (rect 5 0 46 12)(font "Arial" ))
+	(text "in[15..0]" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -61,24 +61,12 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "out[31..0],in[15..0]" (rect 566 176 650 193)(font "Intel Clear" ))
-	(pt 496 192)
-	(pt 696 192)
-	(bus)
-)
-(connector
 	(pt 496 152)
 	(pt 496 192)
 	(bus)
 )
 (connector
 	(pt 496 192)
-	(pt 496 256)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS82>>" (rect 416 240 522 257)(font "Intel Clear" )(invisible))
-	(pt 376 256)
 	(pt 496 256)
 	(bus)
 )
@@ -97,6 +85,18 @@ refer to the applicable agreement for further details.
 	(text "out[31..16]" (rect 451 136 501 153)(font "Intel Clear" ))
 	(pt 496 152)
 	(pt 432 152)
+	(bus)
+)
+(connector
+	(text "out[31..0]" (rect 566 176 610 193)(font "Intel Clear" ))
+	(pt 496 192)
+	(pt 696 192)
+	(bus)
+)
+(connector
+	(text "in[14..0]" (rect 427 240 464 257)(font "Intel Clear" ))
+	(pt 376 256)
+	(pt 496 256)
 	(bus)
 )
 (junction (pt 376 200))
