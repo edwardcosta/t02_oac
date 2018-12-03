@@ -1,0 +1,237 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 312 216 488 232)
+	(text "INPUT" (rect 133 0 162 9)(font "Arial" (font_size 6)))
+	(text "controlULA[4..0]" (rect 5 0 81 10)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 157 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 672 440 848 456)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "JR" (rect 90 0 104 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 632 320 744 424)
+	(text "BAND5" (rect 98 29 113 75)(font "Courier New" (font_size 10)(bold))(vertical))
+	(text "inst34134" (rect 3 1 13 48)(font "Arial" )(vertical))
+	(port
+		(pt 24 0)
+		(input)
+		(text "IN5" (rect 20 84 41 95)(font "Courier New" (bold)))
+		(text "IN5" (rect 17 20 28 41)(font "Courier New" (bold))(vertical))
+		(line (pt 24 0)(pt 24 16))
+	)
+	(port
+		(pt 40 0)
+		(input)
+		(text "IN4" (rect 20 68 41 79)(font "Courier New" (bold)))
+		(text "IN4" (rect 33 20 44 41)(font "Courier New" (bold))(vertical))
+		(line (pt 40 0)(pt 40 16))
+	)
+	(port
+		(pt 72 0)
+		(input)
+		(text "IN2" (rect 20 36 41 47)(font "Courier New" (bold)))
+		(text "IN2" (rect 65 20 76 41)(font "Courier New" (bold))(vertical))
+		(line (pt 72 0)(pt 72 16))
+	)
+	(port
+		(pt 56 0)
+		(input)
+		(text "IN3" (rect 20 52 41 63)(font "Courier New" (bold)))
+		(text "IN3" (rect 49 20 60 41)(font "Courier New" (bold))(vertical))
+		(line (pt 56 0)(pt 56 16))
+	)
+	(port
+		(pt 88 0)
+		(input)
+		(text "IN1" (rect 20 20 41 31)(font "Courier New" (bold)))
+		(text "IN1" (rect 81 20 92 41)(font "Courier New" (bold))(vertical))
+		(line (pt 88 0)(pt 88 16))
+	)
+	(port
+		(pt 40 104)
+		(output)
+		(text "OUT" (rect 71 68 93 79)(font "Courier New" (bold)))
+		(text "OUT" (rect 33 71 44 93)(font "Courier New" (bold))(vertical))
+		(line (pt 40 88)(pt 40 104))
+	)
+	(drawing
+		(line (pt 16 88)(pt 96 88))
+		(line (pt 96 16)(pt 96 88))
+		(line (pt 16 16)(pt 16 88))
+		(line (pt 16 16)(pt 96 16))
+	)
+	(rotate270)
+)
+(symbol
+	(rect 640 272 672 320)
+	(text "NOT" (rect 23 1 32 22)(font "Arial" (font_size 6))(vertical))
+	(text "enois" (rect 2 2 12 29)(font "Arial" )(vertical))
+	(port
+		(pt 16 0)
+		(input)
+		(text "IN" (rect 2 7 17 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 14 2 25 17)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 0)(pt 16 13))
+	)
+	(port
+		(pt 16 48)
+		(output)
+		(text "OUT" (rect 32 7 54 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 14 32 25 54)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 39)(pt 16 48))
+	)
+	(drawing
+		(line (pt 7 13)(pt 25 13))
+		(line (pt 25 13)(pt 16 31))
+		(line (pt 7 13)(pt 16 31))
+		(circle (rect 12 31 20 39))
+	)
+	(rotate270)
+)
+(symbol
+	(rect 688 272 720 320)
+	(text "NOT" (rect 23 1 32 22)(font "Arial" (font_size 6))(vertical))
+	(text "notmybuzns" (rect 3 1 13 60)(font "Arial" )(vertical))
+	(port
+		(pt 16 0)
+		(input)
+		(text "IN" (rect 2 7 17 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 14 2 25 17)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 0)(pt 16 13))
+	)
+	(port
+		(pt 16 48)
+		(output)
+		(text "OUT" (rect 32 7 54 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 14 32 25 54)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 39)(pt 16 48))
+	)
+	(drawing
+		(line (pt 7 13)(pt 25 13))
+		(line (pt 25 13)(pt 16 31))
+		(line (pt 7 13)(pt 16 31))
+		(circle (rect 12 31 20 39))
+	)
+	(rotate270)
+)
+(connector
+	(pt 672 320)
+	(pt 672 208)
+)
+(connector
+	(pt 688 320)
+	(pt 688 224)
+)
+(connector
+	(pt 720 320)
+	(pt 720 256)
+)
+(connector
+	(text "JR" (rect 664 426 674 440)(font "Arial" )(vertical))
+	(pt 672 448)
+	(pt 672 424)
+)
+(connector
+	(pt 656 192)
+	(pt 656 272)
+)
+(connector
+	(pt 704 240)
+	(pt 704 272)
+)
+(connector
+	(pt 488 224)
+	(pt 552 224)
+	(bus)
+)
+(connector
+	(pt 552 192)
+	(pt 552 208)
+	(bus)
+)
+(connector
+	(pt 552 208)
+	(pt 552 224)
+	(bus)
+)
+(connector
+	(pt 552 224)
+	(pt 552 240)
+	(bus)
+)
+(connector
+	(pt 552 240)
+	(pt 552 256)
+	(bus)
+)
+(connector
+	(text "controlULA[4]" (rect 562 184 626 194)(font "Arial" ))
+	(pt 552 192)
+	(pt 656 192)
+)
+(connector
+	(text "controlULA[3]" (rect 562 200 626 210)(font "Arial" ))
+	(pt 552 208)
+	(pt 672 208)
+)
+(connector
+	(text "controlULA[2]" (rect 562 216 626 226)(font "Arial" ))
+	(pt 552 224)
+	(pt 688 224)
+)
+(connector
+	(text "controlULA[1]" (rect 562 232 626 242)(font "Arial" ))
+	(pt 552 240)
+	(pt 704 240)
+)
+(connector
+	(text "controlULA[0]" (rect 562 248 626 258)(font "Arial" ))
+	(pt 552 256)
+	(pt 720 256)
+)
+(junction (pt 552 208))
+(junction (pt 552 224))
+(junction (pt 552 240))

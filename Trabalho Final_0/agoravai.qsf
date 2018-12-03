@@ -1,0 +1,161 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 18:01:55  June 06, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		agoravai_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone 10 LP"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY lab2
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:01:55  JUNE 06, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name BSF_FILE registerClear.bsf
+set_global_assignment -name BDF_FILE registerClear.bdf
+set_global_assignment -name BSF_FILE registerMEMWB.bsf
+set_global_assignment -name BSF_FILE registerIFID.bsf
+set_global_assignment -name BSF_FILE registerIDEX.bsf
+set_global_assignment -name BSF_FILE registerEXMEM.bsf
+set_global_assignment -name BDF_FILE registerMEMWB.bdf
+set_global_assignment -name BDF_FILE registerIFID.bdf
+set_global_assignment -name BDF_FILE registerIDEX.bdf
+set_global_assignment -name BDF_FILE registerEXMEM.bdf
+set_global_assignment -name BDF_FILE signalExtend.bdf
+set_global_assignment -name BDF_FILE pcRegister.bdf
+set_global_assignment -name BSF_FILE registerZero.bsf
+set_global_assignment -name BSF_FILE registerFile.bsf
+set_global_assignment -name BSF_FILE muxRegister.bsf
+set_global_assignment -name BSF_FILE register32.bsf
+set_global_assignment -name BSF_FILE lpm_decode0.bsf
+set_global_assignment -name BDF_FILE registerZero.bdf
+set_global_assignment -name BDF_FILE registerFile.bdf
+set_global_assignment -name BDF_FILE register32.bdf
+set_global_assignment -name SOURCE_FILE add.cmp
+set_global_assignment -name QIP_FILE add.qip
+set_global_assignment -name BDF_FILE agoravai.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE agoravai.vwf
+set_global_assignment -name QIP_FILE decode.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_ram.vwf
+set_global_assignment -name QIP_FILE inst_memory.qip
+set_global_assignment -name QIP_FILE data_memory.qip
+set_global_assignment -name QIP_FILE ula_add_sub.qip
+set_global_assignment -name QIP_FILE ula_less.qip
+set_global_assignment -name QIP_FILE ula_mult.qip
+set_global_assignment -name QIP_FILE ula_add.qip
+set_global_assignment -name QIP_FILE ula_addu.qip
+set_global_assignment -name QIP_FILE ula_sub.qip
+set_global_assignment -name QIP_FILE ula_subu.qip
+set_global_assignment -name QIP_FILE ula_mux.qip
+set_global_assignment -name QIP_FILE ula_sll.qip
+set_global_assignment -name QIP_FILE ula_srl.qip
+set_global_assignment -name QIP_FILE ula_div.qip
+set_global_assignment -name BDF_FILE lui.bdf
+set_global_assignment -name BDF_FILE test_bus.bdf
+set_global_assignment -name BDF_FILE ula_and.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ula_and.vwf
+set_global_assignment -name BDF_FILE ula_or.bdf
+set_global_assignment -name BDF_FILE ula_xor.bdf
+set_global_assignment -name QIP_FILE pc_adder.qip
+set_global_assignment -name QIP_FILE pc_mux.qip
+set_global_assignment -name QIP_FILE instruction_memory.qip
+set_global_assignment -name QIP_FILE reg_dst_mux.qip
+set_global_assignment -name BDF_FILE lab2.bdf
+set_global_assignment -name QIP_FILE branch_add.qip
+set_global_assignment -name QIP_FILE mem_to_reg_mux.qip
+set_global_assignment -name QIP_FILE ula_beq.qip
+set_global_assignment -name QIP_FILE ula_slt.qip
+set_global_assignment -name QIP_FILE ula_bgez.qip
+set_global_assignment -name BDF_FILE controlULA.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE control_ula_test.vwf
+set_global_assignment -name BDF_FILE control.bdf
+set_global_assignment -name QIP_FILE origALU_mux.qip
+set_global_assignment -name BDF_FILE HI.bdf
+set_global_assignment -name BDF_FILE LO.bdf
+set_global_assignment -name QIP_FILE mux2d5.qip
+set_global_assignment -name BDF_FILE register5.bdf
+set_global_assignment -name QIP_FILE simple2mux.qip
+set_global_assignment -name QIP_FILE mux32.qip
+set_global_assignment -name QIP_FILE decodeerr.qip
+set_global_assignment -name QIP_FILE register_ra.qip
+set_global_assignment -name BDF_FILE teste_ra.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_ra.vwf
+set_global_assignment -name QIP_FILE jump_mux.qip
+set_global_assignment -name QIP_FILE link_mux.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE lab2.vwf
+set_global_assignment -name MIF_FILE agoravai.mif
+set_global_assignment -name QIP_FILE reg_dst_mux_ex.qip
+set_global_assignment -name BDF_FILE controlHILO.bdf
+set_global_assignment -name BDF_FILE controlJR.bdf
+set_global_assignment -name QIP_FILE SO_address.qip
+set_global_assignment -name QIP_FILE exception_mux.qip
+set_global_assignment -name BDF_FILE CausaInt.bdf
+set_global_assignment -name BDF_FILE EPC.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE control.vwf
+set_global_assignment -name QIP_FILE exception_sub.qip
+set_global_assignment -name QIP_FILE compare_forward.qip
+set_global_assignment -name BDF_FILE forwarding.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE forwarding.vwf
+set_global_assignment -name QIP_FILE forward_mux.qip
+set_global_assignment -name QIP_FILE hazard_compare.qip
+set_global_assignment -name BDF_FILE hazard_detection.bdf
+set_global_assignment -name QIP_FILE mux_hazard_control.qip
+set_global_assignment -name QIP_FILE zero_constant.qip
+set_global_assignment -name QIP_FILE mux_hazard_opALU.qip
+set_global_assignment -name QIP_FILE zero_opALU.qip
+set_global_assignment -name BDF_FILE flush.bdf
+set_global_assignment -name BDF_FILE register5clear.bdf
+set_global_assignment -name BDF_FILE extend_jump.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE extended_jump.vwf
+set_global_assignment -name QIP_FILE control_clk.qip
+set_global_assignment -name QIP_FILE clear_clock.qip
+set_global_assignment -name BDF_FILE OddDetector.bdf
+set_global_assignment -name QIP_FILE const_16.qip
+set_global_assignment -name QIP_FILE const16.qip
+set_global_assignment -name QIP_FILE const0.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE OddDetector.vwf
+set_global_assignment -name BDF_FILE Not4Detector.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE exception3.qip
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/jlyamin/Documents/3o Semestre/OAC/Trabalho Final/lab2.vwf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

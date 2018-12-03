@@ -1,0 +1,776 @@
+Analysis & Synthesis report for agoravai
+Tue Nov 13 08:58:01 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis IP Cores Summary
+  6. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Tue Nov 13 08:58:01 2018           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; agoravai                                    ;
+; Top-level Entity Name              ; lab2                                        ;
+; Family                             ; Cyclone 10 LP                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; lab2               ; agoravai           ;
+; Family name                                                      ; Cyclone 10 LP      ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                 ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------+------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                              ; IP Include File        ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------+------------------------+
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |lab2|instruction_memory:inst4                               ; instruction_memory.vhd ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst6|compare_forward:inst                  ; compare_forward.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst6|compare_forward:inst2                 ; compare_forward.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst6|compare_forward:inst4                 ; compare_forward.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst6|compare_forward:inst5                 ; compare_forward.vhd    ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|mem_to_reg_mux:inst10                                  ; mem_to_reg_mux.vhd     ;
+; Altera ; LPM_MULT     ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_mult:inst1                         ; ula_mult.vhd           ;
+; Altera ; LPM_CLSHIFT  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_sll:inst2                          ; ula_sll.vhd            ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_beq:inst3                          ; ula_beq.vhd            ;
+; Altera ; LPM_CLSHIFT  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_srl:inst4                          ; ula_srl.vhd            ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_add:inst5                          ; ula_add.vhd            ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_addu:inst6                         ; ula_addu.vhd           ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_sub:inst7                          ; ula_sub.vhd            ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_subu:inst8                         ; ula_subu.vhd           ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_mux:inst9                          ; ula_mux.vhd            ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_beq:inst10                         ; ula_beq.vhd            ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_mux:inst13                         ; ula_mux.vhd            ;
+; Altera ; LPM_DIVIDE   ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_div:inst14                         ; ula_div.vhd            ;
+; Altera ; LPM_CLSHIFT  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|lui:inst15|ula_sll:inst                ; ula_sll.vhd            ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_slt:inst16                         ; ula_slt.vhd            ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|agoravai:inst14|ula_bgez:inst18                        ; ula_bgez.vhd           ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst89               ; mux_hazard_control.vhd ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|zero_constant:inst90                    ; zero_constant.vhd      ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst91               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst92               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst93               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst94               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst95               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst96               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst97               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst98               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_control:inst99               ; mux_hazard_control.vhd ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|mux_hazard_opALU:inst100                ; mux_hazard_opALU.vhd   ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab2|control:inst15|zero_opALU:inst101                      ; zero_opALU.vhd         ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|origALU_mux:inst19                                     ; origALU_mux.vhd        ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerEXMEM:inst20|register5:inst4asd|mux2d5:inst1   ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerEXMEM:inst20|register5:inst6xxx|mux2d5:inst1   ; mux2d5.vhd             ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|hazard_detection:inst27|hazard_compare:instleozin      ; hazard_compare.vhd     ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|hazard_detection:inst27|hazard_compare:instxxx         ; hazard_compare.vhd     ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|forward_mux:inst31                                     ; forward_mux.vhd        ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|forward_mux:inst32                                     ; forward_mux.vhd        ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerMEMWB:inst33|register5:inst4asdxx|mux2d5:inst1 ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerMEMWB:inst33|register5:zinst6xxx|mux2d5:inst1  ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerIDEX:inst35|register5:inst3|mux2d5:inst1       ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerIDEX:inst35|register5:inst6|mux2d5:inst1       ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerIDEX:inst35|register5:inst8|mux2d5:inst1       ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerIDEX:inst35|register5:inst9|mux2d5:inst1       ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerIDEX:inst35|register5clear:inst31|mux2d5:inst1 ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerIDEX:inst35|register5clear:inst32|mux2d5:inst1 ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerIDEX:inst35|register5clear:inst33|mux2d5:inst1 ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerIDEX:inst35|register5clear:inst34|mux2d5:inst1 ; mux2d5.vhd             ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control_clk:inst40                                     ; control_clk.vhd        ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab2|clear_clock:inst41                                     ; clear_clock.vhd        ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------+------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Nov 13 08:57:17 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off agoravai -c agoravai
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file registerclear.bdf
+    Info (12023): Found entity 1: registerClear
+Info (12021): Found 1 design units, including 1 entities, in source file registermemwb.bdf
+    Info (12023): Found entity 1: registerMEMWB
+Info (12021): Found 1 design units, including 1 entities, in source file registerifid.bdf
+    Info (12023): Found entity 1: registerIFID
+Info (12021): Found 1 design units, including 1 entities, in source file registeridex.bdf
+    Info (12023): Found entity 1: registerIDEX
+Info (12021): Found 1 design units, including 1 entities, in source file registerexmem.bdf
+    Info (12023): Found entity 1: registerEXMEM
+Info (12021): Found 1 design units, including 1 entities, in source file signalextend.bdf
+    Info (12023): Found entity 1: signalExtend
+Info (12021): Found 1 design units, including 1 entities, in source file pcregister.bdf
+    Info (12023): Found entity 1: pcRegister
+Info (12021): Found 1 design units, including 1 entities, in source file registerzero.bdf
+    Info (12023): Found entity 1: registerZero
+Info (12021): Found 1 design units, including 1 entities, in source file registerfile.bdf
+    Info (12023): Found entity 1: registerFile
+Info (12021): Found 1 design units, including 1 entities, in source file register32.bdf
+    Info (12023): Found entity 1: register32
+Info (12021): Found 2 design units, including 1 entities, in source file add.vhd
+    Info (12022): Found design unit 1: add-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/add.vhd Line: 53
+    Info (12023): Found entity 1: add File: C:/Users/afons_000/Desktop/Trabalho Final/add.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file agoravai.bdf
+    Info (12023): Found entity 1: agoravai
+Info (12021): Found 2 design units, including 1 entities, in source file decode.vhd
+    Info (12022): Found design unit 1: decode-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/decode.vhd Line: 82
+    Info (12023): Found entity 1: decode File: C:/Users/afons_000/Desktop/Trabalho Final/decode.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file inst_memory.vhd
+    Info (12022): Found design unit 1: inst_memory-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/inst_memory.vhd Line: 54
+    Info (12023): Found entity 1: inst_memory File: C:/Users/afons_000/Desktop/Trabalho Final/inst_memory.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file data_memory.vhd
+    Info (12022): Found design unit 1: data_memory-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/data_memory.vhd Line: 56
+    Info (12023): Found entity 1: data_memory File: C:/Users/afons_000/Desktop/Trabalho Final/data_memory.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_add_sub.vhd
+    Info (12022): Found design unit 1: ula_add_sub-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_add_sub.vhd Line: 53
+    Info (12023): Found entity 1: ula_add_sub File: C:/Users/afons_000/Desktop/Trabalho Final/ula_add_sub.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_less.vhd
+    Info (12022): Found design unit 1: ula_less-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_less.vhd Line: 54
+    Info (12023): Found entity 1: ula_less File: C:/Users/afons_000/Desktop/Trabalho Final/ula_less.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_mult.vhd
+    Info (12022): Found design unit 1: ula_mult-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mult.vhd Line: 52
+    Info (12023): Found entity 1: ula_mult File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mult.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_add.vhd
+    Info (12022): Found design unit 1: ula_add-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_add.vhd Line: 53
+    Info (12023): Found entity 1: ula_add File: C:/Users/afons_000/Desktop/Trabalho Final/ula_add.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_addu.vhd
+    Info (12022): Found design unit 1: ula_addu-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_addu.vhd Line: 53
+    Info (12023): Found entity 1: ula_addu File: C:/Users/afons_000/Desktop/Trabalho Final/ula_addu.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_sub.vhd
+    Info (12022): Found design unit 1: ula_sub-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sub.vhd Line: 53
+    Info (12023): Found entity 1: ula_sub File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sub.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_subu.vhd
+    Info (12022): Found design unit 1: ula_subu-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_subu.vhd Line: 53
+    Info (12023): Found entity 1: ula_subu File: C:/Users/afons_000/Desktop/Trabalho Final/ula_subu.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_mux.vhd
+    Info (12022): Found design unit 1: ula_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mux.vhd Line: 70
+    Info (12023): Found entity 1: ula_mux File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mux.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_sll.vhd
+    Info (12022): Found design unit 1: ula_sll-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sll.vhd Line: 52
+    Info (12023): Found entity 1: ula_sll File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sll.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_srl.vhd
+    Info (12022): Found design unit 1: ula_srl-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_srl.vhd Line: 52
+    Info (12023): Found entity 1: ula_srl File: C:/Users/afons_000/Desktop/Trabalho Final/ula_srl.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_div.vhd
+    Info (12022): Found design unit 1: ula_div-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_div.vhd Line: 53
+    Info (12023): Found entity 1: ula_div File: C:/Users/afons_000/Desktop/Trabalho Final/ula_div.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file lui.bdf
+    Info (12023): Found entity 1: lui
+Info (12021): Found 1 design units, including 1 entities, in source file test_bus.bdf
+    Info (12023): Found entity 1: test_bus
+Info (12021): Found 1 design units, including 1 entities, in source file ula_and.bdf
+    Info (12023): Found entity 1: ula_and
+Info (12021): Found 1 design units, including 1 entities, in source file ula_or.bdf
+    Info (12023): Found entity 1: ula_or
+Info (12021): Found 1 design units, including 1 entities, in source file ula_xor.bdf
+    Info (12023): Found entity 1: ula_xor
+Info (12021): Found 2 design units, including 1 entities, in source file pc_adder.vhd
+    Info (12022): Found design unit 1: pc_adder-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/pc_adder.vhd Line: 51
+    Info (12023): Found entity 1: pc_adder File: C:/Users/afons_000/Desktop/Trabalho Final/pc_adder.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file pc_mux.vhd
+    Info (12022): Found design unit 1: pc_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/pc_mux.vhd Line: 53
+    Info (12023): Found entity 1: pc_mux File: C:/Users/afons_000/Desktop/Trabalho Final/pc_mux.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file instruction_memory.vhd
+    Info (12022): Found design unit 1: instruction_memory-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/instruction_memory.vhd Line: 52
+    Info (12023): Found entity 1: instruction_memory File: C:/Users/afons_000/Desktop/Trabalho Final/instruction_memory.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file reg_dst_mux.vhd
+    Info (12022): Found design unit 1: reg_dst_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/reg_dst_mux.vhd Line: 53
+    Info (12023): Found entity 1: reg_dst_mux File: C:/Users/afons_000/Desktop/Trabalho Final/reg_dst_mux.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file lab2.bdf
+    Info (12023): Found entity 1: lab2
+Info (12021): Found 2 design units, including 1 entities, in source file branch_add.vhd
+    Info (12022): Found design unit 1: branch_add-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/branch_add.vhd Line: 52
+    Info (12023): Found entity 1: branch_add File: C:/Users/afons_000/Desktop/Trabalho Final/branch_add.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file mem_to_reg_mux.vhd
+    Info (12022): Found design unit 1: mem_to_reg_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/mem_to_reg_mux.vhd Line: 55
+    Info (12023): Found entity 1: mem_to_reg_mux File: C:/Users/afons_000/Desktop/Trabalho Final/mem_to_reg_mux.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_beq.vhd
+    Info (12022): Found design unit 1: ula_beq-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_beq.vhd Line: 52
+    Info (12023): Found entity 1: ula_beq File: C:/Users/afons_000/Desktop/Trabalho Final/ula_beq.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_slt.vhd
+    Info (12022): Found design unit 1: ula_slt-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_slt.vhd Line: 52
+    Info (12023): Found entity 1: ula_slt File: C:/Users/afons_000/Desktop/Trabalho Final/ula_slt.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file ula_bgez.vhd
+    Info (12022): Found design unit 1: ula_bgez-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/ula_bgez.vhd Line: 51
+    Info (12023): Found entity 1: ula_bgez File: C:/Users/afons_000/Desktop/Trabalho Final/ula_bgez.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file controlula.bdf
+    Info (12023): Found entity 1: controlULA
+Info (12021): Found 1 design units, including 1 entities, in source file control.bdf
+    Info (12023): Found entity 1: control
+Info (12021): Found 2 design units, including 1 entities, in source file origalu_mux.vhd
+    Info (12022): Found design unit 1: origalu_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/origALU_mux.vhd Line: 53
+    Info (12023): Found entity 1: origALU_mux File: C:/Users/afons_000/Desktop/Trabalho Final/origALU_mux.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file hi.bdf
+    Info (12023): Found entity 1: HI
+Info (12021): Found 1 design units, including 1 entities, in source file lo.bdf
+    Info (12023): Found entity 1: LO
+Info (12021): Found 2 design units, including 1 entities, in source file mux2d5.vhd
+    Info (12022): Found design unit 1: mux2d5-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d5.vhd Line: 53
+    Info (12023): Found entity 1: mux2d5 File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d5.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file register5.bdf
+    Info (12023): Found entity 1: register5
+Info (12021): Found 2 design units, including 1 entities, in source file simple2mux.vhd
+    Info (12022): Found design unit 1: simple2mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/simple2mux.vhd Line: 53
+    Info (12023): Found entity 1: simple2mux File: C:/Users/afons_000/Desktop/Trabalho Final/simple2mux.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file mux32.vhd
+    Info (12022): Found design unit 1: mux32-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/mux32.vhd Line: 83
+    Info (12023): Found entity 1: mux32 File: C:/Users/afons_000/Desktop/Trabalho Final/mux32.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file decodeerr.vhd
+    Info (12022): Found design unit 1: decodeerr-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/decodeerr.vhd Line: 83
+    Info (12023): Found entity 1: decodeerr File: C:/Users/afons_000/Desktop/Trabalho Final/decodeerr.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file register_ra.vhd
+    Info (12022): Found design unit 1: register_ra-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/register_ra.vhd Line: 50
+    Info (12023): Found entity 1: register_ra File: C:/Users/afons_000/Desktop/Trabalho Final/register_ra.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file teste_ra.bdf
+    Info (12023): Found entity 1: teste_ra
+Info (12021): Found 2 design units, including 1 entities, in source file jump_mux.vhd
+    Info (12022): Found design unit 1: jump_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/jump_mux.vhd Line: 53
+    Info (12023): Found entity 1: jump_mux File: C:/Users/afons_000/Desktop/Trabalho Final/jump_mux.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file link_mux.vhd
+    Info (12022): Found design unit 1: link_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/link_mux.vhd Line: 53
+    Info (12023): Found entity 1: link_mux File: C:/Users/afons_000/Desktop/Trabalho Final/link_mux.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file reg_dst_mux_ex.vhd
+    Info (12022): Found design unit 1: reg_dst_mux_ex-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/reg_dst_mux_ex.vhd Line: 53
+    Info (12023): Found entity 1: reg_dst_mux_ex File: C:/Users/afons_000/Desktop/Trabalho Final/reg_dst_mux_ex.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file controlhilo.bdf
+    Info (12023): Found entity 1: controlHILO
+Info (12021): Found 1 design units, including 1 entities, in source file controljr.bdf
+    Info (12023): Found entity 1: controlJR
+Info (12021): Found 4 design units, including 2 entities, in source file so_address.vhd
+    Info (12022): Found design unit 1: SO_address_lpm_constant_c19-RTL File: C:/Users/afons_000/Desktop/Trabalho Final/SO_address.vhd Line: 50
+    Info (12022): Found design unit 2: so_address-RTL File: C:/Users/afons_000/Desktop/Trabalho Final/SO_address.vhd Line: 71
+    Info (12023): Found entity 1: SO_address_lpm_constant_c19 File: C:/Users/afons_000/Desktop/Trabalho Final/SO_address.vhd Line: 43
+    Info (12023): Found entity 2: SO_address File: C:/Users/afons_000/Desktop/Trabalho Final/SO_address.vhd Line: 63
+Info (12021): Found 2 design units, including 1 entities, in source file exception_mux.vhd
+    Info (12022): Found design unit 1: exception_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/exception_mux.vhd Line: 53
+    Info (12023): Found entity 1: exception_mux File: C:/Users/afons_000/Desktop/Trabalho Final/exception_mux.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file causaint.bdf
+    Info (12023): Found entity 1: CausaInt
+Info (12021): Found 1 design units, including 1 entities, in source file epc.bdf
+    Info (12023): Found entity 1: EPC
+Info (12021): Found 2 design units, including 1 entities, in source file exception_sub.vhd
+    Info (12022): Found design unit 1: exception_sub-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/exception_sub.vhd Line: 51
+    Info (12023): Found entity 1: exception_sub File: C:/Users/afons_000/Desktop/Trabalho Final/exception_sub.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file compare_forward.vhd
+    Info (12022): Found design unit 1: compare_forward-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/compare_forward.vhd Line: 52
+    Info (12023): Found entity 1: compare_forward File: C:/Users/afons_000/Desktop/Trabalho Final/compare_forward.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file forwarding.bdf
+    Info (12023): Found entity 1: forwarding
+Info (12021): Found 2 design units, including 1 entities, in source file forward_mux.vhd
+    Info (12022): Found design unit 1: forward_mux-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/forward_mux.vhd Line: 55
+    Info (12023): Found entity 1: forward_mux File: C:/Users/afons_000/Desktop/Trabalho Final/forward_mux.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file hazard_compare.vhd
+    Info (12022): Found design unit 1: hazard_compare-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/hazard_compare.vhd Line: 52
+    Info (12023): Found entity 1: hazard_compare File: C:/Users/afons_000/Desktop/Trabalho Final/hazard_compare.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file hazard_detection.bdf
+    Info (12023): Found entity 1: hazard_detection
+Info (12021): Found 2 design units, including 1 entities, in source file mux_hazard_control.vhd
+    Info (12022): Found design unit 1: mux_hazard_control-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/mux_hazard_control.vhd Line: 53
+    Info (12023): Found entity 1: mux_hazard_control File: C:/Users/afons_000/Desktop/Trabalho Final/mux_hazard_control.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file zero_constant.vhd
+    Info (12022): Found design unit 1: zero_constant-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/zero_constant.vhd Line: 50
+    Info (12023): Found entity 1: zero_constant File: C:/Users/afons_000/Desktop/Trabalho Final/zero_constant.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file mux_hazard_opalu.vhd
+    Info (12022): Found design unit 1: mux_hazard_opalu-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/mux_hazard_opALU.vhd Line: 53
+    Info (12023): Found entity 1: mux_hazard_opALU File: C:/Users/afons_000/Desktop/Trabalho Final/mux_hazard_opALU.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file zero_opalu.vhd
+    Info (12022): Found design unit 1: zero_opalu-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/zero_opALU.vhd Line: 50
+    Info (12023): Found entity 1: zero_opALU File: C:/Users/afons_000/Desktop/Trabalho Final/zero_opALU.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file flush.bdf
+    Info (12023): Found entity 1: flush
+Info (12021): Found 1 design units, including 1 entities, in source file register5clear.bdf
+    Info (12023): Found entity 1: register5clear
+Info (12021): Found 1 design units, including 1 entities, in source file extend_jump.bdf
+    Info (12023): Found entity 1: extend_jump
+Info (12021): Found 2 design units, including 1 entities, in source file control_clk.vhd
+    Info (12022): Found design unit 1: control_clk-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/control_clk.vhd Line: 53
+    Info (12023): Found entity 1: control_clk File: C:/Users/afons_000/Desktop/Trabalho Final/control_clk.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file clear_clock.vhd
+    Info (12022): Found design unit 1: clear_clock-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/clear_clock.vhd Line: 50
+    Info (12023): Found entity 1: clear_clock File: C:/Users/afons_000/Desktop/Trabalho Final/clear_clock.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file odddetector.bdf
+    Info (12023): Found entity 1: OddDetector
+Info (12021): Found 2 design units, including 1 entities, in source file const_16.vhd
+    Info (12022): Found design unit 1: const_16-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/const_16.vhd Line: 50
+    Info (12023): Found entity 1: const_16 File: C:/Users/afons_000/Desktop/Trabalho Final/const_16.vhd Line: 42
+Info (12021): Found 4 design units, including 2 entities, in source file const16.vhd
+    Info (12022): Found design unit 1: const16_lpm_constant_s09-RTL File: C:/Users/afons_000/Desktop/Trabalho Final/const16.vhd Line: 50
+    Info (12022): Found design unit 2: const16-RTL File: C:/Users/afons_000/Desktop/Trabalho Final/const16.vhd Line: 71
+    Info (12023): Found entity 1: const16_lpm_constant_s09 File: C:/Users/afons_000/Desktop/Trabalho Final/const16.vhd Line: 43
+    Info (12023): Found entity 2: const16 File: C:/Users/afons_000/Desktop/Trabalho Final/const16.vhd Line: 63
+Info (12021): Found 4 design units, including 2 entities, in source file const0.vhd
+    Info (12022): Found design unit 1: const0_lpm_constant_r09-RTL File: C:/Users/afons_000/Desktop/Trabalho Final/const0.vhd Line: 50
+    Info (12022): Found design unit 2: const0-RTL File: C:/Users/afons_000/Desktop/Trabalho Final/const0.vhd Line: 71
+    Info (12023): Found entity 1: const0_lpm_constant_r09 File: C:/Users/afons_000/Desktop/Trabalho Final/const0.vhd Line: 43
+    Info (12023): Found entity 2: const0 File: C:/Users/afons_000/Desktop/Trabalho Final/const0.vhd Line: 63
+Info (12021): Found 1 design units, including 1 entities, in source file not4detector.bdf
+    Info (12023): Found entity 1: Not4Detector
+Info (12021): Found 2 design units, including 1 entities, in source file exception3.vhd
+    Info (12022): Found design unit 1: exception3-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/exception3.vhd Line: 51
+    Info (12023): Found entity 1: exception3 File: C:/Users/afons_000/Desktop/Trabalho Final/exception3.vhd Line: 42
+Info (12127): Elaborating entity "lab2" for the top level hierarchy
+Warning (275085): Found inconsistent dimensions for element "WriteReg/EX"
+Warning (275085): Found inconsistent dimensions for element "WriteReg/EX"
+Warning (275080): Converted elements in bus name "WriteReg/EX" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "WriteReg/EX[4..0]" to "WriteReg/EX4..0"
+    Warning (275081): Converted element name(s) from "WriteReg/EX[4..0]" to "WriteReg/EX4..0"
+Info (12128): Elaborating entity "registerMEMWB" for hierarchy "registerMEMWB:inst33"
+Info (12128): Elaborating entity "register32" for hierarchy "registerMEMWB:inst33|register32:regALU2"
+Warning (12125): Using design file mux2d32.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: mux2d32-SYN File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d32.vhd Line: 53
+    Info (12023): Found entity 1: mux2d32 File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d32.vhd Line: 42
+Info (12128): Elaborating entity "mux2d32" for hierarchy "registerMEMWB:inst33|register32:regALU2|mux2d32:inst10"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "registerMEMWB:inst33|register32:regALU2|mux2d32:inst10|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d32.vhd Line: 135
+Info (12130): Elaborated megafunction instantiation "registerMEMWB:inst33|register32:regALU2|mux2d32:inst10|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d32.vhd Line: 135
+Info (12133): Instantiated megafunction "registerMEMWB:inst33|register32:regALU2|mux2d32:inst10|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d32.vhd Line: 135
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+    Info (12134): Parameter "LPM_SIZE" = "2"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_v8e.tdf
+    Info (12023): Found entity 1: mux_v8e File: C:/Users/afons_000/Desktop/Trabalho Final/db/mux_v8e.tdf Line: 22
+Info (12128): Elaborating entity "mux_v8e" for hierarchy "registerMEMWB:inst33|register32:regALU2|mux2d32:inst10|LPM_MUX:LPM_MUX_component|mux_v8e:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "register5" for hierarchy "registerMEMWB:inst33|register5:zinst6xxx"
+Info (12128): Elaborating entity "mux2d5" for hierarchy "registerMEMWB:inst33|register5:zinst6xxx|mux2d5:inst1"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "registerMEMWB:inst33|register5:zinst6xxx|mux2d5:inst1|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d5.vhd Line: 81
+Info (12130): Elaborated megafunction instantiation "registerMEMWB:inst33|register5:zinst6xxx|mux2d5:inst1|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d5.vhd Line: 81
+Info (12133): Instantiated megafunction "registerMEMWB:inst33|register5:zinst6xxx|mux2d5:inst1|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/mux2d5.vhd Line: 81
+    Info (12134): Parameter "LPM_WIDTH" = "5"
+    Info (12134): Parameter "LPM_SIZE" = "2"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_f7e.tdf
+    Info (12023): Found entity 1: mux_f7e File: C:/Users/afons_000/Desktop/Trabalho Final/db/mux_f7e.tdf Line: 22
+Info (12128): Elaborating entity "mux_f7e" for hierarchy "registerMEMWB:inst33|register5:zinst6xxx|mux2d5:inst1|LPM_MUX:LPM_MUX_component|mux_f7e:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "control_clk" for hierarchy "control_clk:inst40"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "control_clk:inst40|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/control_clk.vhd Line: 75
+Info (12130): Elaborated megafunction instantiation "control_clk:inst40|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/control_clk.vhd Line: 75
+Info (12133): Instantiated megafunction "control_clk:inst40|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/control_clk.vhd Line: 75
+    Info (12134): Parameter "LPM_WIDTH" = "1"
+    Info (12134): Parameter "LPM_SIZE" = "2"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_b7e.tdf
+    Info (12023): Found entity 1: mux_b7e File: C:/Users/afons_000/Desktop/Trabalho Final/db/mux_b7e.tdf Line: 22
+Info (12128): Elaborating entity "mux_b7e" for hierarchy "control_clk:inst40|LPM_MUX:LPM_MUX_component|mux_b7e:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "clear_clock" for hierarchy "clear_clock:inst41"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "clear_clock:inst41|lpm_constant:LPM_CONSTANT_component" File: C:/Users/afons_000/Desktop/Trabalho Final/clear_clock.vhd Line: 71
+Info (12130): Elaborated megafunction instantiation "clear_clock:inst41|lpm_constant:LPM_CONSTANT_component" File: C:/Users/afons_000/Desktop/Trabalho Final/clear_clock.vhd Line: 71
+Info (12133): Instantiated megafunction "clear_clock:inst41|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/clear_clock.vhd Line: 71
+    Info (12134): Parameter "lpm_cvalue" = "0"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "1"
+Info (12128): Elaborating entity "registerEXMEM" for hierarchy "registerEXMEM:inst20"
+Info (12128): Elaborating entity "registerIDEX" for hierarchy "registerIDEX:inst35"
+Warning (275011): Block or symbol "registerClear" of instance "inst25" overlaps another block or symbol
+Info (12128): Elaborating entity "registerClear" for hierarchy "registerIDEX:inst35|registerClear:inst10"
+Info (12128): Elaborating entity "register5clear" for hierarchy "registerIDEX:inst35|register5clear:inst34"
+Info (12128): Elaborating entity "flush" for hierarchy "flush:inst34"
+Info (12128): Elaborating entity "agoravai" for hierarchy "agoravai:inst14"
+Info (12128): Elaborating entity "ula_mux" for hierarchy "agoravai:inst14|ula_mux:inst9"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "agoravai:inst14|ula_mux:inst9|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mux.vhd Line: 726
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_mux:inst9|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mux.vhd Line: 726
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_mux:inst9|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mux.vhd Line: 726
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+    Info (12134): Parameter "LPM_SIZE" = "19"
+    Info (12134): Parameter "LPM_WIDTHS" = "5"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_rae.tdf
+    Info (12023): Found entity 1: mux_rae File: C:/Users/afons_000/Desktop/Trabalho Final/db/mux_rae.tdf Line: 22
+Info (12128): Elaborating entity "mux_rae" for hierarchy "agoravai:inst14|ula_mux:inst9|LPM_MUX:LPM_MUX_component|mux_rae:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "lui" for hierarchy "agoravai:inst14|lui:inst15"
+Warning (275009): Pin "inputA" not connected
+Info (12128): Elaborating entity "ula_sll" for hierarchy "agoravai:inst14|lui:inst15|ula_sll:inst"
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "agoravai:inst14|lui:inst15|ula_sll:inst|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sll.vhd Line: 78
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|lui:inst15|ula_sll:inst|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sll.vhd Line: 78
+Info (12133): Instantiated megafunction "agoravai:inst14|lui:inst15|ula_sll:inst|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sll.vhd Line: 78
+    Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
+    Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widthdist" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_ukb.tdf
+    Info (12023): Found entity 1: lpm_clshift_ukb File: C:/Users/afons_000/Desktop/Trabalho Final/db/lpm_clshift_ukb.tdf Line: 22
+Info (12128): Elaborating entity "lpm_clshift_ukb" for hierarchy "agoravai:inst14|lui:inst15|ula_sll:inst|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 53
+Info (12128): Elaborating entity "ula_sub" for hierarchy "agoravai:inst14|ula_sub:inst7"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "agoravai:inst14|ula_sub:inst7|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sub.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_sub:inst7|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sub.vhd Line: 80
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_sub:inst7|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_sub.vhd Line: 80
+    Info (12134): Parameter "lpm_direction" = "SUB"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mgi.tdf
+    Info (12023): Found entity 1: add_sub_mgi File: C:/Users/afons_000/Desktop/Trabalho Final/db/add_sub_mgi.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_mgi" for hierarchy "agoravai:inst14|ula_sub:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_mgi:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 118
+Info (12128): Elaborating entity "ula_addu" for hierarchy "agoravai:inst14|ula_addu:inst6"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "agoravai:inst14|ula_addu:inst6|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_addu.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_addu:inst6|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_addu.vhd Line: 80
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_addu:inst6|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_addu.vhd Line: 80
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_omi.tdf
+    Info (12023): Found entity 1: add_sub_omi File: C:/Users/afons_000/Desktop/Trabalho Final/db/add_sub_omi.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_omi" for hierarchy "agoravai:inst14|ula_addu:inst6|lpm_add_sub:LPM_ADD_SUB_component|add_sub_omi:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 118
+Info (12128): Elaborating entity "ula_add" for hierarchy "agoravai:inst14|ula_add:inst5"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "agoravai:inst14|ula_add:inst5|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_add.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_add:inst5|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_add.vhd Line: 80
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_add:inst5|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_add.vhd Line: 80
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lfi.tdf
+    Info (12023): Found entity 1: add_sub_lfi File: C:/Users/afons_000/Desktop/Trabalho Final/db/add_sub_lfi.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_lfi" for hierarchy "agoravai:inst14|ula_add:inst5|lpm_add_sub:LPM_ADD_SUB_component|add_sub_lfi:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 118
+Info (12128): Elaborating entity "ula_xor" for hierarchy "agoravai:inst14|ula_xor:inst21"
+Info (12128): Elaborating entity "LPM_INV" for hierarchy "agoravai:inst14|LPM_INV:inst12"
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|LPM_INV:inst12"
+Info (12133): Instantiated megafunction "agoravai:inst14|LPM_INV:inst12" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+Info (12128): Elaborating entity "ula_or" for hierarchy "agoravai:inst14|ula_or:inst20"
+Info (12128): Elaborating entity "ula_and" for hierarchy "agoravai:inst14|ula_and:inst"
+Info (12128): Elaborating entity "ula_bgez" for hierarchy "agoravai:inst14|ula_bgez:inst18"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "agoravai:inst14|ula_bgez:inst18|lpm_compare:LPM_COMPARE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_bgez.vhd Line: 78
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_bgez:inst18|lpm_compare:LPM_COMPARE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_bgez.vhd Line: 78
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_bgez:inst18|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_bgez.vhd Line: 78
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info (12134): Parameter "lpm_representation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_koi.tdf
+    Info (12023): Found entity 1: cmpr_koi File: C:/Users/afons_000/Desktop/Trabalho Final/db/cmpr_koi.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_koi" for hierarchy "agoravai:inst14|ula_bgez:inst18|lpm_compare:LPM_COMPARE_component|cmpr_koi:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
+Info (12128): Elaborating entity "ula_slt" for hierarchy "agoravai:inst14|ula_slt:inst16"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "agoravai:inst14|ula_slt:inst16|lpm_compare:LPM_COMPARE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_slt.vhd Line: 74
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_slt:inst16|lpm_compare:LPM_COMPARE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_slt.vhd Line: 74
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_slt:inst16|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_slt.vhd Line: 74
+    Info (12134): Parameter "lpm_representation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_9gg.tdf
+    Info (12023): Found entity 1: cmpr_9gg File: C:/Users/afons_000/Desktop/Trabalho Final/db/cmpr_9gg.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_9gg" for hierarchy "agoravai:inst14|ula_slt:inst16|lpm_compare:LPM_COMPARE_component|cmpr_9gg:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
+Info (12128): Elaborating entity "ula_beq" for hierarchy "agoravai:inst14|ula_beq:inst10"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "agoravai:inst14|ula_beq:inst10|lpm_compare:LPM_COMPARE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_beq.vhd Line: 74
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_beq:inst10|lpm_compare:LPM_COMPARE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_beq.vhd Line: 74
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_beq:inst10|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_beq.vhd Line: 74
+    Info (12134): Parameter "lpm_representation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_2gg.tdf
+    Info (12023): Found entity 1: cmpr_2gg File: C:/Users/afons_000/Desktop/Trabalho Final/db/cmpr_2gg.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_2gg" for hierarchy "agoravai:inst14|ula_beq:inst10|lpm_compare:LPM_COMPARE_component|cmpr_2gg:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
+Info (12128): Elaborating entity "ula_srl" for hierarchy "agoravai:inst14|ula_srl:inst4"
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "agoravai:inst14|ula_srl:inst4|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_srl.vhd Line: 78
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_srl:inst4|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_srl.vhd Line: 78
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_srl:inst4|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_srl.vhd Line: 78
+    Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
+    Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widthdist" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_vjc.tdf
+    Info (12023): Found entity 1: lpm_clshift_vjc File: C:/Users/afons_000/Desktop/Trabalho Final/db/lpm_clshift_vjc.tdf Line: 22
+Info (12128): Elaborating entity "lpm_clshift_vjc" for hierarchy "agoravai:inst14|ula_srl:inst4|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 53
+Info (12128): Elaborating entity "ula_div" for hierarchy "agoravai:inst14|ula_div:inst14"
+Info (12128): Elaborating entity "lpm_divide" for hierarchy "agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_div.vhd Line: 81
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_div.vhd Line: 81
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_div.vhd Line: 81
+    Info (12134): Parameter "lpm_drepresentation" = "SIGNED"
+    Info (12134): Parameter "lpm_hint" = "LPM_REMAINDERPOSITIVE=TRUE"
+    Info (12134): Parameter "lpm_nrepresentation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_DIVIDE"
+    Info (12134): Parameter "lpm_widthd" = "32"
+    Info (12134): Parameter "lpm_widthn" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jkp.tdf
+    Info (12023): Found entity 1: lpm_divide_jkp File: C:/Users/afons_000/Desktop/Trabalho Final/db/lpm_divide_jkp.tdf Line: 24
+Info (12128): Elaborating entity "lpm_divide_jkp" for hierarchy "agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf Line: 147
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_39h.tdf
+    Info (12023): Found entity 1: sign_div_unsign_39h File: C:/Users/afons_000/Desktop/Trabalho Final/db/sign_div_unsign_39h.tdf Line: 24
+Info (12128): Elaborating entity "sign_div_unsign_39h" for hierarchy "agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated|sign_div_unsign_39h:divider" File: C:/Users/afons_000/Desktop/Trabalho Final/db/lpm_divide_jkp.tdf Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_v9f.tdf
+    Info (12023): Found entity 1: alt_u_div_v9f File: C:/Users/afons_000/Desktop/Trabalho Final/db/alt_u_div_v9f.tdf Line: 26
+Info (12128): Elaborating entity "alt_u_div_v9f" for hierarchy "agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_v9f:divider" File: C:/Users/afons_000/Desktop/Trabalho Final/db/sign_div_unsign_39h.tdf Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_0pc.tdf
+    Info (12023): Found entity 1: add_sub_0pc File: C:/Users/afons_000/Desktop/Trabalho Final/db/add_sub_0pc.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_0pc" for hierarchy "agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_v9f:divider|add_sub_0pc:add_sub_0" File: C:/Users/afons_000/Desktop/Trabalho Final/db/alt_u_div_v9f.tdf Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1pc.tdf
+    Info (12023): Found entity 1: add_sub_1pc File: C:/Users/afons_000/Desktop/Trabalho Final/db/add_sub_1pc.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_1pc" for hierarchy "agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_v9f:divider|add_sub_1pc:add_sub_1" File: C:/Users/afons_000/Desktop/Trabalho Final/db/alt_u_div_v9f.tdf Line: 35
+Info (12128): Elaborating entity "ula_mult" for hierarchy "agoravai:inst14|ula_mult:inst1"
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "agoravai:inst14|ula_mult:inst1|lpm_mult:lpm_mult_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mult.vhd Line: 77
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_mult:inst1|lpm_mult:lpm_mult_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mult.vhd Line: 77
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_mult:inst1|lpm_mult:lpm_mult_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_mult.vhd Line: 77
+    Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_MULT"
+    Info (12134): Parameter "lpm_widtha" = "32"
+    Info (12134): Parameter "lpm_widthb" = "32"
+    Info (12134): Parameter "lpm_widthp" = "64"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_ifn.tdf
+    Info (12023): Found entity 1: mult_ifn File: C:/Users/afons_000/Desktop/Trabalho Final/db/mult_ifn.tdf Line: 30
+Info (12128): Elaborating entity "mult_ifn" for hierarchy "agoravai:inst14|ula_mult:inst1|lpm_mult:lpm_mult_component|mult_ifn:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 376
+Info (12128): Elaborating entity "ula_subu" for hierarchy "agoravai:inst14|ula_subu:inst8"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "agoravai:inst14|ula_subu:inst8|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_subu.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "agoravai:inst14|ula_subu:inst8|lpm_add_sub:LPM_ADD_SUB_component" File: C:/Users/afons_000/Desktop/Trabalho Final/ula_subu.vhd Line: 80
+Info (12133): Instantiated megafunction "agoravai:inst14|ula_subu:inst8|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/ula_subu.vhd Line: 80
+    Info (12134): Parameter "lpm_direction" = "SUB"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_pni.tdf
+    Info (12023): Found entity 1: add_sub_pni File: C:/Users/afons_000/Desktop/Trabalho Final/db/add_sub_pni.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_pni" for hierarchy "agoravai:inst14|ula_subu:inst8|lpm_add_sub:LPM_ADD_SUB_component|add_sub_pni:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 118
+Info (12128): Elaborating entity "forward_mux" for hierarchy "forward_mux:inst31"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "forward_mux:inst31|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/forward_mux.vhd Line: 201
+Info (12130): Elaborated megafunction instantiation "forward_mux:inst31|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/forward_mux.vhd Line: 201
+Info (12133): Instantiated megafunction "forward_mux:inst31|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/forward_mux.vhd Line: 201
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+    Info (12134): Parameter "LPM_SIZE" = "4"
+    Info (12134): Parameter "LPM_WIDTHS" = "2"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_29e.tdf
+    Info (12023): Found entity 1: mux_29e File: C:/Users/afons_000/Desktop/Trabalho Final/db/mux_29e.tdf Line: 22
+Info (12128): Elaborating entity "mux_29e" for hierarchy "forward_mux:inst31|LPM_MUX:LPM_MUX_component|mux_29e:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "mem_to_reg_mux" for hierarchy "mem_to_reg_mux:inst10"
+Info (12128): Elaborating entity "forwarding" for hierarchy "forwarding:inst6"
+Info (12128): Elaborating entity "compare_forward" for hierarchy "forwarding:inst6|compare_forward:inst"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/compare_forward.vhd Line: 74
+Info (12130): Elaborated megafunction instantiation "forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component" File: C:/Users/afons_000/Desktop/Trabalho Final/compare_forward.vhd Line: 74
+Info (12133): Instantiated megafunction "forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/compare_forward.vhd Line: 74
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
+    Info (12134): Parameter "lpm_width" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_llg.tdf
+    Info (12023): Found entity 1: cmpr_llg File: C:/Users/afons_000/Desktop/Trabalho Final/db/cmpr_llg.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_llg" for hierarchy "forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component|cmpr_llg:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
+Info (12128): Elaborating entity "origALU_mux" for hierarchy "origALU_mux:inst19"
+Info (12128): Elaborating entity "controlULA" for hierarchy "controlULA:inst13"
+Warning (275011): Block or symbol "NOT" of instance "inst4" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst12" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst38" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst45" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst51" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst76" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst83" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst85" overlaps another block or symbol
+Info (12128): Elaborating entity "control" for hierarchy "control:inst15"
+Warning (275011): Block or symbol "NOT" of instance "inst31" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst35" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst42" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst44" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst46" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst48" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst51" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst53" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst55" overlaps another block or symbol
+Info (12128): Elaborating entity "mux_hazard_control" for hierarchy "control:inst15|mux_hazard_control:inst89"
+Info (12128): Elaborating entity "zero_constant" for hierarchy "control:inst15|zero_constant:inst90"
+Info (12128): Elaborating entity "mux_hazard_opALU" for hierarchy "control:inst15|mux_hazard_opALU:inst100"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "control:inst15|mux_hazard_opALU:inst100|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/mux_hazard_opALU.vhd Line: 79
+Info (12130): Elaborated megafunction instantiation "control:inst15|mux_hazard_opALU:inst100|LPM_MUX:LPM_MUX_component" File: C:/Users/afons_000/Desktop/Trabalho Final/mux_hazard_opALU.vhd Line: 79
+Info (12133): Instantiated megafunction "control:inst15|mux_hazard_opALU:inst100|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/mux_hazard_opALU.vhd Line: 79
+    Info (12134): Parameter "LPM_WIDTH" = "4"
+    Info (12134): Parameter "LPM_SIZE" = "2"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_e7e.tdf
+    Info (12023): Found entity 1: mux_e7e File: C:/Users/afons_000/Desktop/Trabalho Final/db/mux_e7e.tdf Line: 22
+Info (12128): Elaborating entity "mux_e7e" for hierarchy "control:inst15|mux_hazard_opALU:inst100|LPM_MUX:LPM_MUX_component|mux_e7e:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "zero_opALU" for hierarchy "control:inst15|zero_opALU:inst101"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "control:inst15|zero_opALU:inst101|lpm_constant:LPM_CONSTANT_component" File: C:/Users/afons_000/Desktop/Trabalho Final/zero_opALU.vhd Line: 71
+Info (12130): Elaborated megafunction instantiation "control:inst15|zero_opALU:inst101|lpm_constant:LPM_CONSTANT_component" File: C:/Users/afons_000/Desktop/Trabalho Final/zero_opALU.vhd Line: 71
+Info (12133): Instantiated megafunction "control:inst15|zero_opALU:inst101|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/zero_opALU.vhd Line: 71
+    Info (12134): Parameter "lpm_cvalue" = "0"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "4"
+Info (12128): Elaborating entity "hazard_detection" for hierarchy "hazard_detection:inst27"
+Info (12128): Elaborating entity "hazard_compare" for hierarchy "hazard_detection:inst27|hazard_compare:instleozin"
+Info (12128): Elaborating entity "registerIFID" for hierarchy "registerIFID:inst"
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "instruction_memory:inst4"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component" File: C:/Users/afons_000/Desktop/Trabalho Final/instruction_memory.vhd Line: 84
+Info (12130): Elaborated megafunction instantiation "instruction_memory:inst4|altsyncram:altsyncram_component" File: C:/Users/afons_000/Desktop/Trabalho Final/instruction_memory.vhd Line: 84
+Info (12133): Instantiated megafunction "instruction_memory:inst4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/afons_000/Desktop/Trabalho Final/instruction_memory.vhd Line: 84
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../TD/dia2/Nivel2/Nivel2-Dia2-1-2018-TD_code.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "65536"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "16"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gva1.tdf
+    Info (12023): Found entity 1: altsyncram_gva1 File: C:/Users/afons_000/Desktop/Trabalho Final/db/altsyncram_gva1.tdf Line: 31
+Info (12128): Elaborating entity "altsyncram_gva1" for hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_gva1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Error (127001): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File ../TD/dia2/Nivel2/Nivel2-Dia2-1-2018-TD_code.mif for ROM instance ALTSYNCRAM File: C:/Users/afons_000/Desktop/Trabalho Final/instruction_memory.vhd Line: 84
+Error (12152): Can't elaborate user hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_gva1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 26 warnings
+    Error: Peak virtual memory: 4901 megabytes
+    Error: Processing ended: Tue Nov 13 08:58:02 2018
+    Error: Elapsed time: 00:00:45
+    Error: Total CPU time (on all processors): 00:01:07
+
+

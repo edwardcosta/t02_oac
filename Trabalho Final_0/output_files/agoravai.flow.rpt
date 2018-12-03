@@ -1,0 +1,164 @@
+Flow report for agoravai
+Tue Nov 13 08:58:01 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Flow Failed - Tue Nov 13 08:58:01 2018      ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; agoravai                                    ;
+; Top-level Entity Name              ; lab2                                        ;
+; Family                             ; Cyclone 10 LP                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/13/2018 08:57:21 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; agoravai            ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 61762886359181.154210664006964         ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                     ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MISC_FILE                           ; add.bsf                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; add.cmp                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; decode.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; inst_memory.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; data_memory.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_add_sub.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_less.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_mult.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_add.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_addu.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_sub.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_subu.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_mux.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_sll.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_srl.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_div.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; pc_adder.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; pc_mux.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; instruction_memory.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; reg_dst_mux.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; branch_add.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; mem_to_reg_mux.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_beq.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_slt.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_bgez.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; origALU_mux.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2d5.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; simple2mux.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux32.bsf                              ; --            ; --          ; --             ;
+; MISC_FILE                           ; decodeerr.bsf                          ; --            ; --          ; --             ;
+; MISC_FILE                           ; register_ra.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; jump_mux.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; link_mux.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; reg_dst_mux_ex.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; SO_address.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; exception_mux.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; exception_sub.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; compare_forward.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; forward_mux.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; hazard_compare.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux_hazard_control.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; zero_constant.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux_hazard_opALU.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; zero_opALU.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; control_clk.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; clear_clock.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; const_16.cmp                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; const16.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; const0.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; exception3.bsf                         ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; lab2        ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; lab2        ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; lab2        ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; lab2                                   ; agoravai      ; --          ; --             ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:43     ; 1.0                     ; 4901 MB             ; 00:01:05                           ;
+; Total                ; 00:00:43     ; --                      ; --                  ; 00:01:05                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; Luis-pc          ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off agoravai -c agoravai
+
+
+

@@ -1,0 +1,25 @@
+
+
+/home/wladimir/altera/13.0sp1/ram.vhd
+
+Jun 08 07PM:58:18>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+ram.bdf
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
+
+/home/wladimir/altera/13.0sp1/ram.vhd
+
+Jun 08 08PM:07:54>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+ram.bdf
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
