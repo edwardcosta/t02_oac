@@ -90,3 +90,4 @@ set_global_assignment -name BDF_FILE reg4.bdf
 set_global_assignment -name BDF_FILE reg8.bdf
 set_global_assignment -name BDF_FILE reg16.bdf
 set_global_assignment -name BDF_FILE 10sel5.bdf
+set_global_assignment -name QIP_FILE rom.qip
