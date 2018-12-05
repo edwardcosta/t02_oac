@@ -4587,108 +4587,52 @@ refer to the applicable agreement for further details.
 	(pt 304 6528)
 )
 (connector
-	(pt 232 192)
-	(pt 320 192)
-)
-(connector
-	(pt 320 128)
-	(pt 456 128)
-)
-(connector
 	(pt 456 336)
 	(pt 320 336)
-)
-(connector
-	(pt 320 128)
-	(pt 320 192)
 )
 (connector
 	(pt 456 544)
 	(pt 320 544)
 )
 (connector
-	(pt 320 192)
-	(pt 320 336)
-)
-(connector
 	(pt 456 752)
 	(pt 320 752)
-)
-(connector
-	(pt 320 336)
-	(pt 320 544)
 )
 (connector
 	(pt 456 960)
 	(pt 320 960)
 )
 (connector
-	(pt 320 544)
-	(pt 320 752)
-)
-(connector
 	(pt 456 1168)
 	(pt 320 1168)
-)
-(connector
-	(pt 320 752)
-	(pt 320 960)
 )
 (connector
 	(pt 456 1376)
 	(pt 320 1376)
 )
 (connector
-	(pt 320 960)
-	(pt 320 1168)
-)
-(connector
 	(pt 456 1584)
 	(pt 320 1584)
-)
-(connector
-	(pt 320 1168)
-	(pt 320 1376)
 )
 (connector
 	(pt 456 1792)
 	(pt 320 1792)
 )
 (connector
-	(pt 320 1376)
-	(pt 320 1584)
-)
-(connector
 	(pt 456 2000)
 	(pt 320 2000)
-)
-(connector
-	(pt 320 1584)
-	(pt 320 1792)
 )
 (connector
 	(pt 456 2208)
 	(pt 320 2208)
 )
 (connector
-	(pt 320 1792)
-	(pt 320 2000)
-)
-(connector
 	(pt 456 2416)
 	(pt 320 2416)
 )
 (connector
-	(pt 320 2000)
-	(pt 320 2208)
-)
-(connector
 	(pt 456 2624)
 	(pt 320 2624)
-)
-(connector
-	(pt 320 2208)
-	(pt 320 2416)
 )
 (connector
 	(pt 456 2832)
@@ -5397,6 +5341,77 @@ refer to the applicable agreement for further details.
 	(pt 744 6288)
 	(pt 744 6496)
 )
+(connector
+	(text "A[31..0]" (rect 254 176 290 193)(font "Intel Clear" ))
+	(pt 232 192)
+	(pt 320 192)
+	(bus)
+)
+(connector
+	(text "A[0]" (rect 372 112 392 129)(font "Intel Clear" ))
+	(pt 320 128)
+	(pt 456 128)
+)
+(connector
+	(pt 320 128)
+	(pt 320 192)
+	(bus)
+)
+(connector
+	(pt 320 192)
+	(pt 320 336)
+	(bus)
+)
+(connector
+	(pt 320 336)
+	(pt 320 544)
+	(bus)
+)
+(connector
+	(pt 320 544)
+	(pt 320 752)
+	(bus)
+)
+(connector
+	(pt 320 752)
+	(pt 320 960)
+	(bus)
+)
+(connector
+	(pt 320 960)
+	(pt 320 1168)
+	(bus)
+)
+(connector
+	(pt 320 1168)
+	(pt 320 1376)
+	(bus)
+)
+(connector
+	(pt 320 1376)
+	(pt 320 1584)
+	(bus)
+)
+(connector
+	(pt 320 1584)
+	(pt 320 1792)
+	(bus)
+)
+(connector
+	(pt 320 1792)
+	(pt 320 2000)
+	(bus)
+)
+(connector
+	(pt 320 2000)
+	(pt 320 2208)
+	(bus)
+)
+(connector
+	(pt 320 2208)
+	(pt 320 2416)
+	(bus)
+)
 (junction (pt 744 256))
 (junction (pt 744 304))
 (junction (pt 744 464))
@@ -5552,18 +5567,6 @@ refer to the applicable agreement for further details.
 (junction (pt 304 5904))
 (junction (pt 304 6112))
 (junction (pt 304 6320))
-(junction (pt 320 192))
-(junction (pt 320 336))
-(junction (pt 320 544))
-(junction (pt 320 752))
-(junction (pt 320 960))
-(junction (pt 320 1168))
-(junction (pt 320 1376))
-(junction (pt 320 1584))
-(junction (pt 320 1792))
-(junction (pt 320 2000))
-(junction (pt 320 2208))
-(junction (pt 320 2416))
 (junction (pt 320 2624))
 (junction (pt 320 2832))
 (junction (pt 320 3040))
@@ -5645,3 +5648,15 @@ refer to the applicable agreement for further details.
 (junction (pt 352 5984))
 (junction (pt 352 6192))
 (junction (pt 352 6400))
+(junction (pt 320 192))
+(junction (pt 320 336))
+(junction (pt 320 544))
+(junction (pt 320 752))
+(junction (pt 320 960))
+(junction (pt 320 1168))
+(junction (pt 320 1376))
+(junction (pt 320 1584))
+(junction (pt 320 1792))
+(junction (pt 320 2000))
+(junction (pt 320 2416))
+(junction (pt 320 2208))
