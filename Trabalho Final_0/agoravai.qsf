@@ -49,6 +49,17 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/jlyamin/Documents/3o Semestre/OAC/Trabalho Final/lab2.vwf"
+set_global_assignment -name BDF_FILE 64sel32.bdf
+set_global_assignment -name BDF_FILE somador64.bdf
+set_global_assignment -name BDF_FILE somador32.bdf
+set_global_assignment -name BDF_FILE somador16.bdf
+set_global_assignment -name BDF_FILE somador8.bdf
+set_global_assignment -name BDF_FILE somador4.bdf
+set_global_assignment -name BDF_FILE somador2.bdf
 set_global_assignment -name BSF_FILE registerClear.bsf
 set_global_assignment -name BDF_FILE registerClear.bdf
 set_global_assignment -name BSF_FILE registerMEMWB.bsf
@@ -153,9 +164,16 @@ set_global_assignment -name QIP_FILE const16.qip
 set_global_assignment -name QIP_FILE const0.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE OddDetector.vwf
 set_global_assignment -name BDF_FILE Not4Detector.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name QIP_FILE exception3.qip
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/jlyamin/Documents/3o Semestre/OAC/Trabalho Final/lab2.vwf"
+set_global_assignment -name BDF_FILE clotilde.bdf
+set_global_assignment -name BDF_FILE or5.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name BDF_FILE somador_clotilde.bdf
+set_global_assignment -name QIP_FILE constante1.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name HEX_FILE PipelineInst.hex
+set_global_assignment -name QIP_FILE ula_sra.qip
+set_global_assignment -name QIP_FILE sp_constant.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

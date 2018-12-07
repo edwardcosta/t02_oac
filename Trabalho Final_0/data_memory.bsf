@@ -4,78 +4,78 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 0 0 256 152)
-	(text "data_memory" (rect 89 0 184 15)(font "Arial" (font_size 10)))
-	(text "inst" (rect 8 138 25 148)(font "Arial" ))
+	(text "data_memory" (rect 89 0 182 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 136 25 148)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "data[31..0]" (rect 0 0 62 12)(font "Arial" (font_size 8)))
-		(text "data[31..0]" (rect 4 20 56 31)(font "Arial" (font_size 8)))
+		(text "data[31..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "data[31..0]" (rect 4 18 53 31)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 112 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "wraddress[7..0]" (rect 0 0 90 12)(font "Arial" (font_size 8)))
-		(text "wraddress[7..0]" (rect 4 36 81 47)(font "Arial" (font_size 8)))
+		(text "wraddress[7..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "wraddress[7..0]" (rect 4 34 80 47)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 112 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "wren" (rect 0 0 29 12)(font "Arial" (font_size 8)))
-		(text "wren" (rect 4 52 29 63)(font "Arial" (font_size 8)))
+		(text "wren" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "wren" (rect 4 50 28 63)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 112 64))
 	)
 	(port
 		(pt 0 88)
 		(input)
-		(text "rdaddress[7..0]" (rect 0 0 88 12)(font "Arial" (font_size 8)))
-		(text "rdaddress[7..0]" (rect 4 76 79 87)(font "Arial" (font_size 8)))
+		(text "rdaddress[7..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "rdaddress[7..0]" (rect 4 74 76 87)(font "Arial" (font_size 8)))
 		(line (pt 0 88)(pt 112 88)(line_width 3))
 	)
 	(port
 		(pt 0 104)
 		(input)
-		(text "rden" (rect 0 0 27 12)(font "Arial" (font_size 8)))
-		(text "rden" (rect 4 92 27 103)(font "Arial" (font_size 8)))
+		(text "rden" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "rden" (rect 4 90 24 103)(font "Arial" (font_size 8)))
 		(line (pt 0 104)(pt 112 104))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "clock" (rect 0 0 31 12)(font "Arial" (font_size 8)))
-		(text "clock" (rect 4 116 31 127)(font "Arial" (font_size 8)))
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 114 27 127)(font "Arial" (font_size 8)))
 		(line (pt 0 128)(pt 104 128))
 	)
 	(port
 		(pt 256 88)
 		(output)
-		(text "q[31..0]" (rect 0 0 44 12)(font "Arial" (font_size 8)))
-		(text "q[31..0]" (rect 216 76 253 87)(font "Arial" (font_size 8)))
+		(text "q[31..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "q[31..0]" (rect 217 74 251 87)(font "Arial" (font_size 8)))
 		(line (pt 256 88)(pt 168 88)(line_width 3))
 	)
 	(drawing
-		(text "8192 Bit(s)" (rect 139 2 237 187)(font "Arial" )(vertical))
-		(text "RAM" (rect 148 -4 235 165)(font "Arial" )(vertical))
-		(text "Block Type: AUTO" (rect 40 143 160 295)(font "Arial" ))
+		(text "8192 Bit(s)" (rect 137 10 238 191)(font "Arial" )(vertical))
+		(text "RAM" (rect 148 0 237 167)(font "Arial" )(vertical))
+		(text "Block Type: AUTO" (rect 40 141 156 293)(font "Arial" ))
 		(line (pt 128 24)(pt 168 24))
 		(line (pt 168 24)(pt 168 112))
 		(line (pt 168 112)(pt 128 112))

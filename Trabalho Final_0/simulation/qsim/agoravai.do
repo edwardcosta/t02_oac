@@ -1,10 +1,21 @@
-onerror {quit -f}
+onerror {exit -code 1}
 vlib work
-vlog -work work agoravai.vo
-vlog -work work agoravai.vt
-vsim -novopt -c -t 1ps -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.lab2_vlg_vec_tst
+vcom -work work agoravai.vho
+vcom -work work Waveform.vwf.vht
+vsim -novopt -c -t 1ps -L cyclone10lp -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.lab2_vhd_vec_tst
 vcd file -direction agoravai.msim.vcd
-vcd add -internal lab2_vlg_vec_tst/*
-vcd add -internal lab2_vlg_vec_tst/i1/*
-add wave /*
+vcd add -internal lab2_vhd_vec_tst/*
+vcd add -internal lab2_vhd_vec_tst/i1/*
+proc simTimestamp {} {
+    echo "Simulation time: $::now ps"
+    if { [string equal running [runStatus]] } {
+        after 2500 simTimestamp
+    }
+}
+after 2500 simTimestamp
 run -all
+quit -f
+
+
+
+

@@ -1,6 +1,6 @@
 Flow report for agoravai
-Tue Nov 13 08:58:01 2018
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Thu Dec 06 22:07:02 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Tue Nov 13 08:58:01 2018      ;
-; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Flow Status                        ; Successful - Thu Dec 06 22:07:02 2018       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; agoravai                                    ;
 ; Top-level Entity Name              ; lab2                                        ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 6,517                                       ;
+;     Total combinational functions  ; 4,976                                       ;
+;     Dedicated logic registers      ; 1,818                                       ;
+; Total registers                    ; 1818                                        ;
+; Total pins                         ; 1,547                                       ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 2,105,410                                   ;
+; Embedded Multiplier 9-bit elements ; 8                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/13/2018 08:57:21 ;
+; Start date & time ; 12/06/2018 22:04:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; agoravai            ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 61762886359181.154210664006964         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 247232640702854.154414109612744        ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                     ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
@@ -128,6 +128,12 @@ refer to the applicable agreement for further details.
 ; MISC_FILE                           ; const16.bsf                            ; --            ; --          ; --             ;
 ; MISC_FILE                           ; const0.bsf                             ; --            ; --          ; --             ;
 ; MISC_FILE                           ; exception3.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; constante1.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; constante1.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_sra.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; ula_sra_bb.v                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; sp_constant.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; sp_constant.cmp                        ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; lab2        ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; lab2        ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; lab2        ; Top            ;
@@ -141,8 +147,10 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:43     ; 1.0                     ; 4901 MB             ; 00:01:05                           ;
-; Total                ; 00:00:43     ; --                      ; --                  ; 00:01:05                           ;
+; Analysis & Synthesis ; 00:01:38     ; 1.0                     ; 5079 MB             ; 00:01:59                           ;
+; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4675 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 4699 MB             ; 00:00:07                           ;
+; Total                ; 00:01:50     ; --                      ; --                  ; 00:02:11                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -151,7 +159,9 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Luis-pc          ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-1EI9TLP  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1EI9TLP  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1EI9TLP  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -159,6 +169,8 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off agoravai -c agoravai
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off agoravai -c agoravai --vector_source="C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/Waveform.vwf" --testbench_file="C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim/" agoravai -c agoravai
 
 
 

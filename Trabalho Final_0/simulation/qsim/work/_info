@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim
+Elab2
+Z1 w1544141222
+Z2 DPx11 cyclone10lp 21 cyclone10lp_atom_pack 0 22 dc`iXibM48ca<4g@Q79@U1
+Z3 DPx11 cyclone10lp 22 cyclone10lp_components 0 22 mJU?eij3MY>@Mki:[EMAa3
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
+R0
+Z10 8agoravai.vho
+Z11 Fagoravai.vho
+l0
+L36
+V4MIBd0g4I6S^2>9kRl_Z91
+!s100 6YC5:X6GE^InaAkF?d]H71
+Z12 OV;C;10.5b;63
+32
+!s110 1544141223
+!i10b 1
+Z13 !s108 1544141223.000000
+Z14 !s90 -work|work|agoravai.vho|
+Z15 !s107 agoravai.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 4 lab2 0 22 4MIBd0g4I6S^2>9kRl_Z91
+l10732
+L113
+VSzhMk[UF3ea>YWjb;Z=Sf1
+!s100 5=RlUA9[5J2HBSLiYeoQP2
+R12
+32
+!s110 1544141224
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Elab2_vhd_vec_tst
+Z18 w1544141214
+R7
+R8
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L31
+Vl^Ah3c0WL>?cJ=b?KnULQ3
+!s100 BIf4GR14?@`=m:G`mFKDd1
+R12
+32
+Z21 !s110 1544141226
+!i10b 1
+Z22 !s108 1544141226.000000
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Alab2_arch
+R7
+R8
+Z25 DEx4 work 16 lab2_vhd_vec_tst 0 22 l^Ah3c0WL>?cJ=b?KnULQ3
+l184
+L33
+VoCWRGnOR<Y6XkF]U;R?cc3
+!s100 PhViNY]:U;Gmi4=n5RLMG3
+R12
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R16
+R17

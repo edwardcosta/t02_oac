@@ -4,65 +4,65 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 248 144)
-	(text "agoravai" (rect 5 0 56 12)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 114 25 124)(font "Arial" ))
+	(text "agoravai" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "a[31..0]" (rect 0 0 44 12)(font "Arial" (font_size 8)))
-		(text "a[31..0]" (rect 21 27 65 39)(font "Arial" (font_size 8)))
+		(text "a[31..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "a[31..0]" (rect 21 27 67 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "b[31..0]" (rect 0 0 44 12)(font "Arial" (font_size 8)))
-		(text "b[31..0]" (rect 21 43 65 55)(font "Arial" (font_size 8)))
+		(text "b[31..0]" (rect 0 0 47 19)(font "Intel Clear" (font_size 8)))
+		(text "b[31..0]" (rect 21 43 68 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "shamt[4..0]" (rect 0 0 66 12)(font "Arial" (font_size 8)))
-		(text "shamt[4..0]" (rect 21 59 87 71)(font "Arial" (font_size 8)))
+		(text "shamt[4..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "shamt[4..0]" (rect 21 59 88 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "OPALU[4..0]" (rect 0 0 74 12)(font "Arial" (font_size 8)))
-		(text "OPALU[4..0]" (rect 21 75 95 87)(font "Arial" (font_size 8)))
+		(text "OPALU[4..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
+		(text "OPALU[4..0]" (rect 21 75 94 94)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 232 32)
 		(output)
-		(text "main_result[31..0]" (rect 0 0 105 12)(font "Arial" (font_size 8)))
-		(text "main_result[31..0]" (rect 106 27 211 39)(font "Arial" (font_size 8)))
+		(text "main_result[31..0]" (rect 0 0 108 19)(font "Intel Clear" (font_size 8)))
+		(text "main_result[31..0]" (rect 103 27 211 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(port
 		(pt 232 48)
 		(output)
-		(text "sec_result[31..0]" (rect 0 0 96 12)(font "Arial" (font_size 8)))
-		(text "sec_result[31..0]" (rect 115 43 211 55)(font "Arial" (font_size 8)))
+		(text "sec_result[31..0]" (rect 0 0 97 19)(font "Intel Clear" (font_size 8)))
+		(text "sec_result[31..0]" (rect 114 43 211 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
 	)
 	(drawing
