@@ -16,6 +16,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "InvalidOpcodeULA",
+					"strict" : false
+				},
+				{
 					"name" : "mux_result[31]",
 					"strict" : false
 				},
@@ -145,6 +149,10 @@
 				},
 				{
 					"name" : "hilo_mux[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hilo_mux[0]",
 					"strict" : false
 				},
 				{
@@ -1365,14 +1373,6 @@
 				},
 				{
 					"name" : "BEX[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Cause[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Cause[0]",
 					"strict" : false
 				},
 				{

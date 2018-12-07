@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Dec 07 11:49:15 2018
+Analysis & Synthesis Status : Successful - Fri Dec 07 14:38:13 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : agoravai
 Top-level Entity Name : lab2
 Family : Cyclone 10 LP
-Total logic elements : 6,443
-    Total combinational functions : 4,929
-    Dedicated logic registers : 1,791
-Total registers : 1791
-Total pins : 1,687
+Total logic elements : 6,532
+    Total combinational functions : 5,021
+    Dedicated logic registers : 1,787
+Total registers : 1787
+Total pins : 1,688
 Total virtual pins : 0
-Total memory bits : 2,105,410
+Total memory bits : 2,105,476
 Embedded Multiplier 9-bit elements : 8
 Total PLLs : 0

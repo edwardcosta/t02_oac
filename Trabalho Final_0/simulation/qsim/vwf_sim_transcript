@@ -25,21 +25,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Dec 07 11:50:11 2018
+    Info: Processing started: Fri Dec 07 14:38:23 2018
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off agoravai -c agoravai --vector_source="C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/Waveform.vwf" --testbench_file="C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim/Waveform.vwf.vht"
 Info (119004): Automatically selected device 10CL120YF484I7G for design agoravai
 Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-when writing test bench files
+1005): Ignoring output pin "PCF[25]" in vector source file when writing test bench files
 
-t bench files
-Info (201002): Generated VHDL Test Bench File C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim/Waveform.vwf.vht for simulation
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 467 warnings
-    Info: Peak virtual memory: 4675 megabytes
-    Info: Processing ended: Fri Dec 07 11:50:16 2018
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+1005): Ignoring output pin "Cause[18]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -63,17 +57,17 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Dec 07 11:50:17 2018
+    Info: Processing started: Fri Dec 07 14:38:31 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim/" agoravai -c agoravai
 Info (119004): Automatically selected device 10CL120YF484I7G for design agoravai
 Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file agoravai.vho in folder "C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4700 megabytes
-    Info: Processing ended: Fri Dec 07 11:50:24 2018
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 4702 megabytes
+    Info: Processing ended: Fri Dec 07 14:38:42 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:10
 
 Completed successfully. 
 
@@ -92,15 +86,15 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-# do agoravai.do
 
+# do agoravai.do
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:25 on Dec 07,2018
+# Start time: 14:38:43 on Dec 07,2018
 # vcom -work work agoravai.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
-
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
@@ -109,14 +103,15 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cyclone10lp_atom_pack
 # -- Loading package cyclone10lp_components
 # -- Compiling entity lab2
+
 # -- Compiling architecture structure of lab2
 
 # -- Loading package STANDARD
-# End time: 11:50:28 on Dec 07,2018, Elapsed time: 0:00:03
+# End time: 14:38:48 on Dec 07,2018, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:28 on Dec 07,2018
+# Start time: 14:38:48 on Dec 07,2018
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 
@@ -124,11 +119,12 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package std_logic_1164
 # -- Compiling entity lab2_vhd_vec_tst
 # -- Compiling architecture lab2_arch of lab2_vhd_vec_tst
-# End time: 11:50:28 on Dec 07,2018, Elapsed time: 0:00:00
+
+# End time: 14:38:49 on Dec 07,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclone10lp -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.lab2_vhd_vec_tst 
-# Start time: 11:50:28 on Dec 07,2018
+# Start time: 14:38:49 on Dec 07,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -154,52 +150,55 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclone10lp.cyclone10lp_mac_sign_reg(cyclone10lp_mac_sign_reg)
 # Loading cyclone10lp.cyclone10lp_mac_mult_internal(vital_cyclone10lp_mac_mult_internal)
 # Loading cyclone10lp.cyclone10lp_mac_out(vital_cyclone10lp_mac_out)
-# ** Warning: Design size of 1003854 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 1020936 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
+
 # after#34
 
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
 # Simulation time: 0 ps
 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
+# Simulation time: 0 ps
+
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
+#    Time: 0 ps  Iteration: 2  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 5  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 5  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 5  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 5  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult5\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 5  Instance: /lab2_vhd_vec_tst/i1/\inst14|inst1|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -228,19 +227,81 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 
 # Simulation time: 0 ps
 
-# Simulation time: 0 ps
+# Simulation time: 725000 ps
 
-# Simulation time: 1425000 ps
+# Simulation time: 725000 ps
 
-# Simulation time: 1425000 ps
+# Simulation time: 725000 ps
 
-# Simulation time: 1425000 ps
+# Simulation time: 725000 ps
 
-# Simulation time: 1425000 ps
+# Simulation time: 725000 ps
 
-# Simulation time: 1425000 ps
+# Simulation time: 725000 ps
 
-# End time: 11:51:10 on Dec 07,2018, Elapsed time: 0:00:42
+# Simulation time: 725000 ps
+
+# Simulation time: 725000 ps
+
+# Simulation time: 2125000 ps
+
+# Simulation time: 2125000 ps
+
+# Simulation time: 2125000 ps
+
+# Simulation time: 2125000 ps
+
+# Simulation time: 2125000 ps
+
+# Simulation time: 2125000 ps
+
+# Simulation time: 2125000 ps
+
+# Simulation time: 2125000 ps
+
+# Simulation time: 4075000 ps
+
+# Simulation time: 4075000 ps
+
+# Simulation time: 4075000 ps
+
+# Simulation time: 4075000 ps
+
+# Simulation time: 4075000 ps
+
+# Simulation time: 4075000 ps
+
+# Simulation time: 4075000 ps
+
+# Simulation time: 4075000 ps
+
+# Simulation time: 6275000 ps
+
+# Simulation time: 6275000 ps
+
+# Simulation time: 6275000 ps
+
+# Simulation time: 6275000 ps
+
+# Simulation time: 6275000 ps
+
+# Simulation time: 6275000 ps
+
+# Simulation time: 6275000 ps
+
+# Simulation time: 6275000 ps
+
+# Simulation time: 8500000 ps
+
+# Simulation time: 8500000 ps
+
+# Simulation time: 8500000 ps
+
+# Simulation time: 8500000 ps
+
+# Simulation time: 8500000 ps
+
+# End time: 14:40:56 on Dec 07,2018, Elapsed time: 0:02:07
 # Errors: 0, Warnings: 29
 
 Completed successfully. 
@@ -257,7 +318,7 @@ Warning: ForwardB[1] - signal not found in VCD.
 
 Warning: ForwardB[0] - signal not found in VCD.
 
-Writing the resulting VWF to C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim/agoravai_20181207115111.sim.vwf
+Writing the resulting VWF to C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/simulation/qsim/agoravai_20181207144057.sim.vwf
 
 Finished VCD to VWF conversion.
 

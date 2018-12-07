@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 248 144)
+	(rect 16 16 248 176)
 	(text "controlULA" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
+	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -61,11 +61,25 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 232 80)
 		(output)
-		(text "InvalidOpcodeULA" (rect 0 0 110 19)(font "Intel Clear" (font_size 8)))
-		(text "InvalidOpcodeULA" (rect 101 75 211 94)(font "Intel Clear" (font_size 8)))
+		(text "mthi" (rect 0 0 27 19)(font "Intel Clear" (font_size 8)))
+		(text "mthi" (rect 184 75 211 94)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 80)(pt 216 80))
 	)
+	(port
+		(pt 232 96)
+		(output)
+		(text "mtlo" (rect 0 0 27 19)(font "Intel Clear" (font_size 8)))
+		(text "mtlo" (rect 184 91 211 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 96)(pt 216 96))
+	)
+	(port
+		(pt 232 112)
+		(output)
+		(text "InvalidOpcodeULA" (rect 0 0 110 19)(font "Intel Clear" (font_size 8)))
+		(text "InvalidOpcodeULA" (rect 101 107 211 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 112)(pt 216 112))
+	)
 	(drawing
-		(rectangle (rect 16 16 216 112))
+		(rectangle (rect 16 16 216 144))
 	)
 )

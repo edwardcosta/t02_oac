@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "12/07/2018 11:50:16"
+-- Generated on "12/07/2018 14:38:30"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          lab2
 -- 
@@ -59,6 +59,7 @@ SIGNAL hilo_mux : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL InstructionID : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL Interruption : STD_LOGIC;
 SIGNAL InvalidOpcodeEX : STD_LOGIC;
+SIGNAL InvalidOpcodeMEM : STD_LOGIC;
 SIGNAL InvalidOpcodeULA : STD_LOGIC;
 SIGNAL JumpEX : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL JumpID : STD_LOGIC;
@@ -141,6 +142,7 @@ COMPONENT lab2
 	InstructionID : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	Interruption : OUT STD_LOGIC;
 	InvalidOpcodeEX : OUT STD_LOGIC;
+	InvalidOpcodeMEM : OUT STD_LOGIC;
 	InvalidOpcodeULA : OUT STD_LOGIC;
 	JumpEX : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	JumpID : OUT STD_LOGIC;
@@ -227,6 +229,7 @@ BEGIN
 	InstructionID => InstructionID,
 	Interruption => Interruption,
 	InvalidOpcodeEX => InvalidOpcodeEX,
+	InvalidOpcodeMEM => InvalidOpcodeMEM,
 	InvalidOpcodeULA => InvalidOpcodeULA,
 	JumpEX => JumpEX,
 	JumpID => JumpID,
