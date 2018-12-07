@@ -1,5 +1,5 @@
 Flow report for agoravai
-Thu Dec 06 22:07:02 2018
+Fri Dec 07 11:50:24 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Dec 06 22:07:02 2018       ;
+; Flow Status                        ; Successful - Fri Dec 07 11:50:24 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; agoravai                                    ;
 ; Top-level Entity Name              ; lab2                                        ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 6,517                                       ;
-;     Total combinational functions  ; 4,976                                       ;
-;     Dedicated logic registers      ; 1,818                                       ;
-; Total registers                    ; 1818                                        ;
-; Total pins                         ; 1,547                                       ;
+; Total logic elements               ; 6,443                                       ;
+;     Total combinational functions  ; 4,929                                       ;
+;     Dedicated logic registers      ; 1,791                                       ;
+; Total registers                    ; 1791                                        ;
+; Total pins                         ; 1,687                                       ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,105,410                                   ;
 ; Embedded Multiplier 9-bit elements ; 8                                           ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/06/2018 22:04:57 ;
+; Start date & time ; 12/07/2018 11:47:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; agoravai            ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 247232640702854.154414109612744        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 247232640702854.154419044117172        ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                     ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
@@ -147,10 +147,10 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:38     ; 1.0                     ; 5079 MB             ; 00:01:59                           ;
+; Analysis & Synthesis ; 00:01:54     ; 1.0                     ; 5082 MB             ; 00:02:18                           ;
 ; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4675 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 4699 MB             ; 00:00:07                           ;
-; Total                ; 00:01:50     ; --                      ; --                  ; 00:02:11                           ;
+; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 4700 MB             ; 00:00:07                           ;
+; Total                ; 00:02:06     ; --                      ; --                  ; 00:02:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for agoravai
-Thu Dec 06 22:06:35 2018
+Fri Dec 07 11:49:15 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -21,8 +21,8 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  13. General Register Statistics
  14. Registers Packed Into Inferred Megafunctions
  15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for data_memory:inst24|altsyncram:altsyncram_component|altsyncram_80u3:auto_generated
- 17. Source assignments for instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated
+ 16. Source assignments for data_memory:inst24|altsyncram:altsyncram_component|altsyncram_hit3:auto_generated
+ 17. Source assignments for instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated
  18. Source assignments for registerEXMEM:inst20|register32:WriteReg1|altshift_taps:ff31_rtl_0|shift_taps_56m:auto_generated|altsyncram_ld81:altsyncram2
  19. Parameter Settings for User Entity Instance: registerIDEX:inst35|register32:regA2|mux2d32:inst10|LPM_MUX:LPM_MUX_component
  20. Parameter Settings for User Entity Instance: registerIDEX:inst35|register32:regB2|mux2d32:inst10|LPM_MUX:LPM_MUX_component
@@ -84,10 +84,10 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  76. Parameter Settings for User Entity Instance: reg_dst_mux_ex:inst21|LPM_MUX:LPM_MUX_component
  77. Parameter Settings for User Entity Instance: data_memory:inst24|altsyncram:altsyncram_component
  78. Parameter Settings for User Entity Instance: mem_to_reg_mux:inst10|LPM_MUX:LPM_MUX_component
- 79. Parameter Settings for User Entity Instance: forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component
- 80. Parameter Settings for User Entity Instance: forwarding:inst6|compare_forward:inst4|lpm_compare:LPM_COMPARE_component
- 81. Parameter Settings for User Entity Instance: forwarding:inst6|compare_forward:inst2|lpm_compare:LPM_COMPARE_component
- 82. Parameter Settings for User Entity Instance: forwarding:inst6|compare_forward:inst5|lpm_compare:LPM_COMPARE_component
+ 79. Parameter Settings for User Entity Instance: forwarding:inst43|compare_forward:inst|lpm_compare:LPM_COMPARE_component
+ 80. Parameter Settings for User Entity Instance: forwarding:inst43|compare_forward:inst4|lpm_compare:LPM_COMPARE_component
+ 81. Parameter Settings for User Entity Instance: forwarding:inst43|compare_forward:inst2|lpm_compare:LPM_COMPARE_component
+ 82. Parameter Settings for User Entity Instance: forwarding:inst43|compare_forward:inst5|lpm_compare:LPM_COMPARE_component
  83. Parameter Settings for User Entity Instance: forward_mux:inst32|LPM_MUX:LPM_MUX_component
  84. Parameter Settings for User Entity Instance: origALU_mux:inst19|LPM_MUX:LPM_MUX_component
  85. Parameter Settings for User Entity Instance: control:inst15|mux_hazard_control:inst89|LPM_MUX:LPM_MUX_component
@@ -188,16 +188,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 06 22:06:35 2018       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 07 11:49:15 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; agoravai                                    ;
 ; Top-level Entity Name              ; lab2                                        ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 6,517                                       ;
-;     Total combinational functions  ; 4,976                                       ;
-;     Dedicated logic registers      ; 1,818                                       ;
-; Total registers                    ; 1818                                        ;
-; Total pins                         ; 1,547                                       ;
+; Total logic elements               ; 6,443                                       ;
+;     Total combinational functions  ; 4,929                                       ;
+;     Dedicated logic registers      ; 1,791                                       ;
+; Total registers                    ; 1791                                        ;
+; Total pins                         ; 1,687                                       ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,105,410                                   ;
 ; Embedded Multiplier 9-bit elements ; 8                                           ;
@@ -396,6 +396,7 @@ refer to the applicable agreement for further details.
 ; somador_clotilde.bdf                                             ; yes             ; User Block Diagram/Schematic File      ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/somador_clotilde.bdf          ;         ;
 ; constante1.vhd                                                   ; yes             ; User Wizard-Generated File             ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/constante1.vhd                ;         ;
 ; ula_sra.v                                                        ; yes             ; User Wizard-Generated File             ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/ula_sra.v                     ;         ;
+; sp_constant.vhd                                                  ; yes             ; User Wizard-Generated File             ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/sp_constant.vhd               ;         ;
 ; mux2d32.vhd                                                      ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/mux2d32.vhd                   ;         ;
 ; lpm_mux.tdf                                                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
 ; aglobal180.inc                                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc          ;         ;
@@ -447,12 +448,12 @@ refer to the applicable agreement for further details.
 ; altrom.inc                                                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altrom.inc              ;         ;
 ; altram.inc                                                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altram.inc              ;         ;
 ; altdpram.inc                                                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc            ;         ;
-; db/altsyncram_80u3.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_80u3.tdf        ;         ;
-; /users/eduar/documents/oac/apresentacao-dia4/nivel1dia4_data.mif ; yes             ; Auto-Found Memory Initialization File  ; /users/eduar/documents/oac/apresentacao-dia4/nivel1dia4_data.mif               ;         ;
+; db/altsyncram_hit3.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_hit3.tdf        ;         ;
+; /users/eduar/documents/oac/apresentacao-dia4/nivel2data.hex      ; yes             ; Auto-Found Memory Initialization File  ; /users/eduar/documents/oac/apresentacao-dia4/nivel2data.hex                    ;         ;
 ; db/cmpr_llg.tdf                                                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/cmpr_llg.tdf               ;         ;
 ; db/mux_e7e.tdf                                                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/mux_e7e.tdf                ;         ;
-; db/altsyncram_6rs3.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_6rs3.tdf        ;         ;
-; /users/eduar/documents/oac/apresentacao-dia4/nivel1dia4_code.mif ; yes             ; Auto-Found Memory Initialization File  ; /users/eduar/documents/oac/apresentacao-dia4/nivel1dia4_code.mif               ;         ;
+; db/altsyncram_7rs3.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_7rs3.tdf        ;         ;
+; /users/eduar/documents/oac/apresentacao-dia4/nivel2dia4_code.mif ; yes             ; Auto-Found Memory Initialization File  ; /users/eduar/documents/oac/apresentacao-dia4/nivel2dia4_code.mif               ;         ;
 ; db/decode_d8a.tdf                                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/decode_d8a.tdf             ;         ;
 ; db/mux_hob.tdf                                                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/mux_hob.tdf                ;         ;
 ; db/add_sub_oth.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/add_sub_oth.tdf            ;         ;
@@ -478,31 +479,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 6,517                                                                                ;
+; Estimated Total logic elements              ; 6,443                                                                                ;
 ;                                             ;                                                                                      ;
-; Total combinational functions               ; 4976                                                                                 ;
+; Total combinational functions               ; 4929                                                                                 ;
 ; Logic element usage by number of LUT inputs ;                                                                                      ;
-;     -- 4 input functions                    ; 3100                                                                                 ;
-;     -- 3 input functions                    ; 1638                                                                                 ;
-;     -- <=2 input functions                  ; 238                                                                                  ;
+;     -- 4 input functions                    ; 3035                                                                                 ;
+;     -- 3 input functions                    ; 1649                                                                                 ;
+;     -- <=2 input functions                  ; 245                                                                                  ;
 ;                                             ;                                                                                      ;
 ; Logic elements by mode                      ;                                                                                      ;
-;     -- normal mode                          ; 4038                                                                                 ;
+;     -- normal mode                          ; 3991                                                                                 ;
 ;     -- arithmetic mode                      ; 938                                                                                  ;
 ;                                             ;                                                                                      ;
-; Total registers                             ; 1818                                                                                 ;
-;     -- Dedicated logic registers            ; 1818                                                                                 ;
+; Total registers                             ; 1791                                                                                 ;
+;     -- Dedicated logic registers            ; 1791                                                                                 ;
 ;     -- I/O registers                        ; 0                                                                                    ;
 ;                                             ;                                                                                      ;
-; I/O pins                                    ; 1547                                                                                 ;
+; I/O pins                                    ; 1687                                                                                 ;
 ; Total memory bits                           ; 2105410                                                                              ;
 ;                                             ;                                                                                      ;
 ; Embedded Multiplier 9-bit elements          ; 8                                                                                    ;
 ;                                             ;                                                                                      ;
 ; Maximum fan-out node                        ; control_clk:inst39|lpm_mux:LPM_MUX_component|mux_b7e:auto_generated|result_node[0]~0 ;
-; Maximum fan-out                             ; 1383                                                                                 ;
-; Total fan-out                               ; 30118                                                                                ;
-; Average fan-out                             ; 2.95                                                                                 ;
+; Maximum fan-out                             ; 1351                                                                                 ;
+; Total fan-out                               ; 30067                                                                                ;
+; Average fan-out                             ; 2.88                                                                                 ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 
 
@@ -511,7 +512,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                     ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |lab2                                        ; 4976 (4)            ; 1818 (1)                  ; 2105410     ; 8            ; 0       ; 4         ; 1547 ; 0            ; |lab2                                                                                                                                                   ; lab2                ; work         ;
+; |lab2                                        ; 4929 (4)            ; 1791 (1)                  ; 2105410     ; 8            ; 0       ; 4         ; 1687 ; 0            ; |lab2                                                                                                                                                   ; lab2                ; work         ;
 ;    |64sel32:inst44|                          ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|64sel32:inst44                                                                                                                                    ; 64sel32             ; work         ;
 ;    |CausaInt:inst30|                         ; 1 (0)               ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|CausaInt:inst30                                                                                                                                   ; CausaInt            ; work         ;
 ;       |register32:WriteReg1|                 ; 1 (1)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|CausaInt:inst30|register32:WriteReg1                                                                                                              ; register32          ; work         ;
@@ -528,9 +529,9 @@ refer to the applicable agreement for further details.
 ;    |LO:inst23|                               ; 0 (0)               ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|LO:inst23                                                                                                                                         ; LO                  ; work         ;
 ;       |register32:WriteReg1|                 ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|LO:inst23|register32:WriteReg1                                                                                                                    ; register32          ; work         ;
 ;    |Not4Detector:inst46|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|Not4Detector:inst46                                                                                                                               ; Not4Detector        ; work         ;
-;    |agoravai:inst14|                         ; 2527 (0)            ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |lab2|agoravai:inst14                                                                                                                                   ; agoravai            ; work         ;
-;       |clotilde:inst17|                      ; 79 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17                                                                                                                   ; clotilde            ; work         ;
-;          |somador_clotilde:inst1|            ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1                                                                                            ; somador_clotilde    ; work         ;
+;    |agoravai:inst14|                         ; 2532 (0)            ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |lab2|agoravai:inst14                                                                                                                                   ; agoravai            ; work         ;
+;       |clotilde:inst17|                      ; 80 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17                                                                                                                   ; clotilde            ; work         ;
+;          |somador_clotilde:inst1|            ; 65 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1                                                                                            ; somador_clotilde    ; work         ;
 ;             |somador64:inst11|               ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst11                                                                           ; somador64           ; work         ;
 ;                |somador32:inst|              ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst11|somador32:inst                                                            ; somador32           ; work         ;
 ;                   |somador16:inst|           ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst11|somador32:inst|somador16:inst                                             ; somador16           ; work         ;
@@ -656,18 +657,18 @@ refer to the applicable agreement for further details.
 ;                      |somador8:inst|         ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst31|somador32:inst|somador16:inst|somador8:inst                               ; somador8            ; work         ;
 ;                         |somador4:inst|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst31|somador32:inst|somador16:inst|somador8:inst|somador4:inst                 ; somador4            ; work         ;
 ;                            |somador2:inst1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst31|somador32:inst|somador16:inst|somador8:inst|somador4:inst|somador2:inst1  ; somador2            ; work         ;
-;             |somador64:inst32|               ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32                                                                           ; somador64           ; work         ;
-;                |somador32:inst|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst                                                            ; somador32           ; work         ;
-;                   |somador16:inst|           ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst                                             ; somador16           ; work         ;
+;             |somador64:inst32|               ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32                                                                           ; somador64           ; work         ;
+;                |somador32:inst|              ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst                                                            ; somador32           ; work         ;
+;                   |somador16:inst|           ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst                                             ; somador16           ; work         ;
 ;                      |somador8:inst4|        ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst4                              ; somador8            ; work         ;
 ;                         |somador4:inst|      ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst4|somador4:inst                ; somador4            ; work         ;
 ;                            |somador2:inst1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst4|somador4:inst|somador2:inst1 ; somador2            ; work         ;
-;                      |somador8:inst|         ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst                               ; somador8            ; work         ;
+;                      |somador8:inst|         ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst                               ; somador8            ; work         ;
 ;                         |somador4:inst1|     ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst|somador4:inst1                ; somador4            ; work         ;
 ;                            |somador2:inst1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst|somador4:inst1|somador2:inst1 ; somador2            ; work         ;
 ;                            |somador2:inst|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst|somador4:inst1|somador2:inst  ; somador2            ; work         ;
-;                         |somador4:inst|      ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst|somador4:inst                 ; somador4            ; work         ;
-;                            |somador2:inst1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst|somador4:inst|somador2:inst1  ; somador2            ; work         ;
+;                         |somador4:inst|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst|somador4:inst                 ; somador4            ; work         ;
+;                            |somador2:inst1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst32|somador32:inst|somador16:inst|somador8:inst|somador4:inst|somador2:inst1  ; somador2            ; work         ;
 ;             |somador64:inst5|                ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst5                                                                            ; somador64           ; work         ;
 ;                |somador32:inst|              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst5|somador32:inst                                                             ; somador32           ; work         ;
 ;                   |somador16:inst|           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|clotilde:inst17|somador_clotilde:inst1|somador64:inst5|somador32:inst|somador16:inst                                              ; somador16           ; work         ;
@@ -703,13 +704,13 @@ refer to the applicable agreement for further details.
 ;       |ula_addu:inst6|                       ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_addu:inst6                                                                                                                    ; ula_addu            ; work         ;
 ;          |lpm_add_sub:LPM_ADD_SUB_component| ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_addu:inst6|lpm_add_sub:LPM_ADD_SUB_component                                                                                  ; lpm_add_sub         ; work         ;
 ;             |add_sub_omi:auto_generated|     ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_addu:inst6|lpm_add_sub:LPM_ADD_SUB_component|add_sub_omi:auto_generated                                                       ; add_sub_omi         ; work         ;
-;       |ula_beq:inst3|                        ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_beq:inst3                                                                                                                     ; ula_beq             ; work         ;
-;          |lpm_compare:LPM_COMPARE_component| ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_beq:inst3|lpm_compare:LPM_COMPARE_component                                                                                   ; lpm_compare         ; work         ;
-;             |cmpr_2gg:auto_generated|        ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_beq:inst3|lpm_compare:LPM_COMPARE_component|cmpr_2gg:auto_generated                                                           ; cmpr_2gg            ; work         ;
-;       |ula_div:inst14|                       ; 1436 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14                                                                                                                    ; ula_div             ; work         ;
-;          |lpm_divide:LPM_DIVIDE_component|   ; 1436 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component                                                                                    ; lpm_divide          ; work         ;
-;             |lpm_divide_jkp:auto_generated|  ; 1436 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated                                                      ; lpm_divide_jkp      ; work         ;
-;                |sign_div_unsign_39h:divider| ; 1436 (296)          ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated|sign_div_unsign_39h:divider                          ; sign_div_unsign_39h ; work         ;
+;       |ula_beq:inst3|                        ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_beq:inst3                                                                                                                     ; ula_beq             ; work         ;
+;          |lpm_compare:LPM_COMPARE_component| ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_beq:inst3|lpm_compare:LPM_COMPARE_component                                                                                   ; lpm_compare         ; work         ;
+;             |cmpr_2gg:auto_generated|        ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_beq:inst3|lpm_compare:LPM_COMPARE_component|cmpr_2gg:auto_generated                                                           ; cmpr_2gg            ; work         ;
+;       |ula_div:inst14|                       ; 1443 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14                                                                                                                    ; ula_div             ; work         ;
+;          |lpm_divide:LPM_DIVIDE_component|   ; 1443 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component                                                                                    ; lpm_divide          ; work         ;
+;             |lpm_divide_jkp:auto_generated|  ; 1443 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated                                                      ; lpm_divide_jkp      ; work         ;
+;                |sign_div_unsign_39h:divider| ; 1443 (303)          ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated|sign_div_unsign_39h:divider                          ; sign_div_unsign_39h ; work         ;
 ;                   |alt_u_div_v9f:divider|    ; 1140 (1140)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_div:inst14|lpm_divide:LPM_DIVIDE_component|lpm_divide_jkp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_v9f:divider    ; alt_u_div_v9f       ; work         ;
 ;       |ula_mult:inst1|                       ; 79 (0)              ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mult:inst1                                                                                                                    ; ula_mult            ; work         ;
 ;          |lpm_mult:lpm_mult_component|       ; 79 (0)              ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mult:inst1|lpm_mult:lpm_mult_component                                                                                        ; lpm_mult            ; work         ;
@@ -717,31 +718,31 @@ refer to the applicable agreement for further details.
 ;       |ula_mux:inst13|                       ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst13                                                                                                                    ; ula_mux             ; work         ;
 ;          |lpm_mux:LPM_MUX_component|         ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst13|lpm_mux:LPM_MUX_component                                                                                          ; lpm_mux             ; work         ;
 ;             |mux_kae:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst13|lpm_mux:LPM_MUX_component|mux_kae:auto_generated                                                                   ; mux_kae             ; work         ;
-;       |ula_mux:inst9|                        ; 459 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst9                                                                                                                     ; ula_mux             ; work         ;
-;          |lpm_mux:LPM_MUX_component|         ; 459 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst9|lpm_mux:LPM_MUX_component                                                                                           ; lpm_mux             ; work         ;
-;             |mux_kae:auto_generated|         ; 459 (459)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst9|lpm_mux:LPM_MUX_component|mux_kae:auto_generated                                                                    ; mux_kae             ; work         ;
-;       |ula_sll:inst2|                        ; 107 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sll:inst2                                                                                                                     ; ula_sll             ; work         ;
-;          |lpm_clshift:LPM_CLSHIFT_component| ; 107 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sll:inst2|lpm_clshift:LPM_CLSHIFT_component                                                                                   ; lpm_clshift         ; work         ;
-;             |lpm_clshift_ukb:auto_generated| ; 107 (107)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sll:inst2|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated                                                    ; lpm_clshift_ukb     ; work         ;
+;       |ula_mux:inst9|                        ; 461 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst9                                                                                                                     ; ula_mux             ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 461 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst9|lpm_mux:LPM_MUX_component                                                                                           ; lpm_mux             ; work         ;
+;             |mux_kae:auto_generated|         ; 461 (461)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_mux:inst9|lpm_mux:LPM_MUX_component|mux_kae:auto_generated                                                                    ; mux_kae             ; work         ;
+;       |ula_sll:inst2|                        ; 105 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sll:inst2                                                                                                                     ; ula_sll             ; work         ;
+;          |lpm_clshift:LPM_CLSHIFT_component| ; 105 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sll:inst2|lpm_clshift:LPM_CLSHIFT_component                                                                                   ; lpm_clshift         ; work         ;
+;             |lpm_clshift_ukb:auto_generated| ; 105 (105)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sll:inst2|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated                                                    ; lpm_clshift_ukb     ; work         ;
 ;       |ula_slt:inst16|                       ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_slt:inst16                                                                                                                    ; ula_slt             ; work         ;
 ;          |lpm_compare:LPM_COMPARE_component| ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_slt:inst16|lpm_compare:LPM_COMPARE_component                                                                                  ; lpm_compare         ; work         ;
 ;             |cmpr_9gg:auto_generated|        ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_slt:inst16|lpm_compare:LPM_COMPARE_component|cmpr_9gg:auto_generated                                                          ; cmpr_9gg            ; work         ;
-;       |ula_sra:inst22|                       ; 109 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sra:inst22                                                                                                                    ; ula_sra             ; work         ;
-;          |lpm_clshift:LPM_CLSHIFT_component| ; 109 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sra:inst22|lpm_clshift:LPM_CLSHIFT_component                                                                                  ; lpm_clshift         ; work         ;
-;             |lpm_clshift_euc:auto_generated| ; 109 (109)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sra:inst22|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_euc:auto_generated                                                   ; lpm_clshift_euc     ; work         ;
-;       |ula_srl:inst4|                        ; 102 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_srl:inst4                                                                                                                     ; ula_srl             ; work         ;
-;          |lpm_clshift:LPM_CLSHIFT_component| ; 102 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_srl:inst4|lpm_clshift:LPM_CLSHIFT_component                                                                                   ; lpm_clshift         ; work         ;
-;             |lpm_clshift_vjc:auto_generated| ; 102 (102)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_srl:inst4|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated                                                    ; lpm_clshift_vjc     ; work         ;
+;       |ula_sra:inst22|                       ; 110 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sra:inst22                                                                                                                    ; ula_sra             ; work         ;
+;          |lpm_clshift:LPM_CLSHIFT_component| ; 110 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sra:inst22|lpm_clshift:LPM_CLSHIFT_component                                                                                  ; lpm_clshift         ; work         ;
+;             |lpm_clshift_euc:auto_generated| ; 110 (110)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sra:inst22|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_euc:auto_generated                                                   ; lpm_clshift_euc     ; work         ;
+;       |ula_srl:inst4|                        ; 99 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_srl:inst4                                                                                                                     ; ula_srl             ; work         ;
+;          |lpm_clshift:LPM_CLSHIFT_component| ; 99 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_srl:inst4|lpm_clshift:LPM_CLSHIFT_component                                                                                   ; lpm_clshift         ; work         ;
+;             |lpm_clshift_vjc:auto_generated| ; 99 (99)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_srl:inst4|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated                                                    ; lpm_clshift_vjc     ; work         ;
 ;       |ula_sub:inst7|                        ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sub:inst7                                                                                                                     ; ula_sub             ; work         ;
 ;          |lpm_add_sub:LPM_ADD_SUB_component| ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sub:inst7|lpm_add_sub:LPM_ADD_SUB_component                                                                                   ; lpm_add_sub         ; work         ;
 ;             |add_sub_mgi:auto_generated|     ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_sub:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_mgi:auto_generated                                                        ; add_sub_mgi         ; work         ;
 ;       |ula_subu:inst8|                       ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_subu:inst8                                                                                                                    ; ula_subu            ; work         ;
 ;          |lpm_add_sub:LPM_ADD_SUB_component| ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_subu:inst8|lpm_add_sub:LPM_ADD_SUB_component                                                                                  ; lpm_add_sub         ; work         ;
 ;             |add_sub_pni:auto_generated|     ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|agoravai:inst14|ula_subu:inst8|lpm_add_sub:LPM_ADD_SUB_component|add_sub_pni:auto_generated                                                       ; add_sub_pni         ; work         ;
-;    |branch_add:inst9|                        ; 99 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|branch_add:inst9                                                                                                                                  ; branch_add          ; work         ;
-;       |lpm_add_sub:LPM_ADD_SUB_component|    ; 99 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|branch_add:inst9|lpm_add_sub:LPM_ADD_SUB_component                                                                                                ; lpm_add_sub         ; work         ;
-;          |add_sub_4qh:auto_generated|        ; 99 (99)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|branch_add:inst9|lpm_add_sub:LPM_ADD_SUB_component|add_sub_4qh:auto_generated                                                                     ; add_sub_4qh         ; work         ;
-;    |control:inst15|                          ; 34 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control:inst15                                                                                                                                    ; control             ; work         ;
+;    |branch_add:inst9|                        ; 96 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|branch_add:inst9                                                                                                                                  ; branch_add          ; work         ;
+;       |lpm_add_sub:LPM_ADD_SUB_component|    ; 96 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|branch_add:inst9|lpm_add_sub:LPM_ADD_SUB_component                                                                                                ; lpm_add_sub         ; work         ;
+;          |add_sub_4qh:auto_generated|        ; 96 (96)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|branch_add:inst9|lpm_add_sub:LPM_ADD_SUB_component|add_sub_4qh:auto_generated                                                                     ; add_sub_4qh         ; work         ;
+;    |control:inst15|                          ; 33 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control:inst15                                                                                                                                    ; control             ; work         ;
 ;       |mux_hazard_control:inst89|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control:inst15|mux_hazard_control:inst89                                                                                                          ; mux_hazard_control  ; work         ;
 ;          |lpm_mux:LPM_MUX_component|         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control:inst15|mux_hazard_control:inst89|lpm_mux:LPM_MUX_component                                                                                ; lpm_mux             ; work         ;
 ;             |mux_b7e:auto_generated|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control:inst15|mux_hazard_control:inst89|lpm_mux:LPM_MUX_component|mux_b7e:auto_generated                                                         ; mux_b7e             ; work         ;
@@ -770,9 +771,9 @@ refer to the applicable agreement for further details.
 ;          |lpm_mux:LPM_MUX_component|         ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control:inst15|mux_hazard_opALU:inst100|lpm_mux:LPM_MUX_component                                                                                 ; lpm_mux             ; work         ;
 ;             |mux_e7e:auto_generated|         ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control:inst15|mux_hazard_opALU:inst100|lpm_mux:LPM_MUX_component|mux_e7e:auto_generated                                                          ; mux_e7e             ; work         ;
 ;    |controlHILO:inst1|                       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|controlHILO:inst1                                                                                                                                 ; controlHILO         ; work         ;
-;    |controlJR:inst8|                         ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|controlJR:inst8                                                                                                                                   ; controlJR           ; work         ;
-;       |band5:inst34134|                      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|controlJR:inst8|band5:inst34134                                                                                                                   ; band5               ; work         ;
-;    |controlULA:inst13|                       ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|controlULA:inst13                                                                                                                                 ; controlULA          ; work         ;
+;    |controlJR:inst8|                         ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|controlJR:inst8                                                                                                                                   ; controlJR           ; work         ;
+;       |band5:inst34134|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|controlJR:inst8|band5:inst34134                                                                                                                   ; band5               ; work         ;
+;    |controlULA:inst13|                       ; 42 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|controlULA:inst13                                                                                                                                 ; controlULA          ; work         ;
 ;    |control_clk:inst39|                      ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control_clk:inst39                                                                                                                                ; control_clk         ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control_clk:inst39|lpm_mux:LPM_MUX_component                                                                                                      ; lpm_mux             ; work         ;
 ;          |mux_b7e:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control_clk:inst39|lpm_mux:LPM_MUX_component|mux_b7e:auto_generated                                                                               ; mux_b7e             ; work         ;
@@ -781,7 +782,7 @@ refer to the applicable agreement for further details.
 ;          |mux_b7e:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|control_clk:inst40|lpm_mux:LPM_MUX_component|mux_b7e:auto_generated                                                                               ; mux_b7e             ; work         ;
 ;    |data_memory:inst24|                      ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|data_memory:inst24                                                                                                                                ; data_memory         ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|data_memory:inst24|altsyncram:altsyncram_component                                                                                                ; altsyncram          ; work         ;
-;          |altsyncram_80u3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|data_memory:inst24|altsyncram:altsyncram_component|altsyncram_80u3:auto_generated                                                                 ; altsyncram_80u3     ; work         ;
+;          |altsyncram_hit3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|data_memory:inst24|altsyncram:altsyncram_component|altsyncram_hit3:auto_generated                                                                 ; altsyncram_hit3     ; work         ;
 ;    |exception3:inst58|                       ; 31 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|exception3:inst58                                                                                                                                 ; exception3          ; work         ;
 ;       |lpm_add_sub:LPM_ADD_SUB_component|    ; 31 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|exception3:inst58|lpm_add_sub:LPM_ADD_SUB_component                                                                                               ; lpm_add_sub         ; work         ;
 ;          |add_sub_puh:auto_generated|        ; 31 (31)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|exception3:inst58|lpm_add_sub:LPM_ADD_SUB_component|add_sub_puh:auto_generated                                                                    ; add_sub_puh         ; work         ;
@@ -789,16 +790,19 @@ refer to the applicable agreement for further details.
 ;    |forward_mux:inst31|                      ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst31                                                                                                                                ; forward_mux         ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst31|lpm_mux:LPM_MUX_component                                                                                                      ; lpm_mux             ; work         ;
 ;          |mux_29e:auto_generated|            ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst31|lpm_mux:LPM_MUX_component|mux_29e:auto_generated                                                                               ; mux_29e             ; work         ;
-;    |forward_mux:inst32|                      ; 128 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst32                                                                                                                                ; forward_mux         ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 128 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst32|lpm_mux:LPM_MUX_component                                                                                                      ; lpm_mux             ; work         ;
-;          |mux_29e:auto_generated|            ; 128 (128)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst32|lpm_mux:LPM_MUX_component|mux_29e:auto_generated                                                                               ; mux_29e             ; work         ;
-;    |forwarding:inst6|                        ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forwarding:inst6                                                                                                                                  ; forwarding          ; work         ;
+;    |forward_mux:inst32|                      ; 96 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst32                                                                                                                                ; forward_mux         ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 96 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst32|lpm_mux:LPM_MUX_component                                                                                                      ; lpm_mux             ; work         ;
+;          |mux_29e:auto_generated|            ; 96 (96)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forward_mux:inst32|lpm_mux:LPM_MUX_component|mux_29e:auto_generated                                                                               ; mux_29e             ; work         ;
+;    |forwarding:inst43|                       ; 20 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forwarding:inst43                                                                                                                                 ; forwarding          ; work         ;
+;       |compare_forward:inst4|                ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forwarding:inst43|compare_forward:inst4                                                                                                           ; compare_forward     ; work         ;
+;          |lpm_compare:LPM_COMPARE_component| ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forwarding:inst43|compare_forward:inst4|lpm_compare:LPM_COMPARE_component                                                                         ; lpm_compare         ; work         ;
+;             |cmpr_llg:auto_generated|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|forwarding:inst43|compare_forward:inst4|lpm_compare:LPM_COMPARE_component|cmpr_llg:auto_generated                                                 ; cmpr_llg            ; work         ;
 ;    |hazard_detection:inst27|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|hazard_detection:inst27                                                                                                                           ; hazard_detection    ; work         ;
 ;    |instruction_memory:inst4|                ; 168 (0)             ; 3 (0)                     ; 2097152     ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|instruction_memory:inst4                                                                                                                          ; instruction_memory  ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 168 (0)             ; 3 (0)                     ; 2097152     ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|instruction_memory:inst4|altsyncram:altsyncram_component                                                                                          ; altsyncram          ; work         ;
-;          |altsyncram_6rs3:auto_generated|    ; 168 (0)             ; 3 (3)                     ; 2097152     ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated                                                           ; altsyncram_6rs3     ; work         ;
-;             |decode_d8a:rden_decode|         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated|decode_d8a:rden_decode                                    ; decode_d8a          ; work         ;
-;             |mux_hob:mux2|                   ; 160 (160)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated|mux_hob:mux2                                              ; mux_hob             ; work         ;
+;          |altsyncram_7rs3:auto_generated|    ; 168 (0)             ; 3 (3)                     ; 2097152     ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated                                                           ; altsyncram_7rs3     ; work         ;
+;             |decode_d8a:rden_decode|         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated|decode_d8a:rden_decode                                    ; decode_d8a          ; work         ;
+;             |mux_hob:mux2|                   ; 160 (160)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated|mux_hob:mux2                                              ; mux_hob             ; work         ;
 ;    |link_mux:inst38|                         ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|link_mux:inst38                                                                                                                                   ; link_mux            ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|link_mux:inst38|lpm_mux:LPM_MUX_component                                                                                                         ; lpm_mux             ; work         ;
 ;          |mux_v8e:auto_generated|            ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|link_mux:inst38|lpm_mux:LPM_MUX_component|mux_v8e:auto_generated                                                                                  ; mux_v8e             ; work         ;
@@ -821,7 +825,7 @@ refer to the applicable agreement for further details.
 ;    |reg_dst_mux_ex:inst21|                   ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|reg_dst_mux_ex:inst21                                                                                                                             ; reg_dst_mux_ex      ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|reg_dst_mux_ex:inst21|lpm_mux:LPM_MUX_component                                                                                                   ; lpm_mux             ; work         ;
 ;          |mux_f7e:auto_generated|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|reg_dst_mux_ex:inst21|lpm_mux:LPM_MUX_component|mux_f7e:auto_generated                                                                            ; mux_f7e             ; work         ;
-;    |registerEXMEM:inst20|                    ; 1 (0)               ; 149 (10)                  ; 66          ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerEXMEM:inst20                                                                                                                              ; registerEXMEM       ; work         ;
+;    |registerEXMEM:inst20|                    ; 1 (0)               ; 151 (12)                  ; 66          ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerEXMEM:inst20                                                                                                                              ; registerEXMEM       ; work         ;
 ;       |register32:WriteReg1|                 ; 1 (0)               ; 1 (0)                     ; 66          ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerEXMEM:inst20|register32:WriteReg1                                                                                                         ; register32          ; work         ;
 ;          |altshift_taps:ff31_rtl_0|          ; 1 (0)               ; 1 (0)                     ; 66          ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerEXMEM:inst20|register32:WriteReg1|altshift_taps:ff31_rtl_0                                                                                ; altshift_taps       ; work         ;
 ;             |shift_taps_56m:auto_generated|  ; 1 (0)               ; 1 (0)                     ; 66          ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerEXMEM:inst20|register32:WriteReg1|altshift_taps:ff31_rtl_0|shift_taps_56m:auto_generated                                                  ; shift_taps_56m      ; work         ;
@@ -833,16 +837,16 @@ refer to the applicable agreement for further details.
 ;       |register32:regData2|                  ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerEXMEM:inst20|register32:regData2                                                                                                          ; register32          ; work         ;
 ;       |register5:inst4asd|                   ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerEXMEM:inst20|register5:inst4asd                                                                                                           ; register5           ; work         ;
 ;       |register5:inst6xxx|                   ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerEXMEM:inst20|register5:inst6xxx                                                                                                           ; register5           ; work         ;
-;    |registerFile:inst1asdzxc|                ; 1560 (0)            ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc                                                                                                                          ; registerFile        ; work         ;
-;       |decodeerr:inst4|                      ; 35 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|decodeerr:inst4                                                                                                          ; decodeerr           ; work         ;
-;          |lpm_decode:LPM_DECODE_component|   ; 35 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|decodeerr:inst4|lpm_decode:LPM_DECODE_component                                                                          ; lpm_decode          ; work         ;
-;             |decode_t0g:auto_generated|      ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|decodeerr:inst4|lpm_decode:LPM_DECODE_component|decode_t0g:auto_generated                                                ; decode_t0g          ; work         ;
-;       |mux32:inst1|                          ; 761 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst1                                                                                                              ; mux32               ; work         ;
-;          |lpm_mux:LPM_MUX_component|         ; 761 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst1|lpm_mux:LPM_MUX_component                                                                                    ; lpm_mux             ; work         ;
-;             |mux_mae:auto_generated|         ; 761 (761)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst1|lpm_mux:LPM_MUX_component|mux_mae:auto_generated                                                             ; mux_mae             ; work         ;
-;       |mux32:inst|                           ; 764 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst                                                                                                               ; mux32               ; work         ;
-;          |lpm_mux:LPM_MUX_component|         ; 764 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst|lpm_mux:LPM_MUX_component                                                                                     ; lpm_mux             ; work         ;
-;             |mux_mae:auto_generated|         ; 764 (764)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst|lpm_mux:LPM_MUX_component|mux_mae:auto_generated                                                              ; mux_mae             ; work         ;
+;    |registerFile:inst1asdzxc|                ; 1541 (0)            ; 960 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc                                                                                                                          ; registerFile        ; work         ;
+;       |decodeerr:inst4|                      ; 34 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|decodeerr:inst4                                                                                                          ; decodeerr           ; work         ;
+;          |lpm_decode:LPM_DECODE_component|   ; 34 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|decodeerr:inst4|lpm_decode:LPM_DECODE_component                                                                          ; lpm_decode          ; work         ;
+;             |decode_t0g:auto_generated|      ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|decodeerr:inst4|lpm_decode:LPM_DECODE_component|decode_t0g:auto_generated                                                ; decode_t0g          ; work         ;
+;       |mux32:inst1|                          ; 756 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst1                                                                                                              ; mux32               ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 756 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst1|lpm_mux:LPM_MUX_component                                                                                    ; lpm_mux             ; work         ;
+;             |mux_mae:auto_generated|         ; 756 (756)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst1|lpm_mux:LPM_MUX_component|mux_mae:auto_generated                                                             ; mux_mae             ; work         ;
+;       |mux32:inst|                           ; 751 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst                                                                                                               ; mux32               ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 751 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst|lpm_mux:LPM_MUX_component                                                                                     ; lpm_mux             ; work         ;
+;             |mux_mae:auto_generated|         ; 751 (751)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|mux32:inst|lpm_mux:LPM_MUX_component|mux_mae:auto_generated                                                              ; mux_mae             ; work         ;
 ;       |register32:r_a0|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_a0                                                                                                          ; register32          ; work         ;
 ;       |register32:r_a1|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_a1                                                                                                          ; register32          ; work         ;
 ;       |register32:r_a2|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_a2                                                                                                          ; register32          ; work         ;
@@ -861,7 +865,6 @@ refer to the applicable agreement for further details.
 ;       |register32:r_s5|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_s5                                                                                                          ; register32          ; work         ;
 ;       |register32:r_s6|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_s6                                                                                                          ; register32          ; work         ;
 ;       |register32:r_s7|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_s7                                                                                                          ; register32          ; work         ;
-;       |register32:r_sp|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_sp                                                                                                          ; register32          ; work         ;
 ;       |register32:r_t0|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_t0                                                                                                          ; register32          ; work         ;
 ;       |register32:r_t1|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_t1                                                                                                          ; register32          ; work         ;
 ;       |register32:r_t2|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_t2                                                                                                          ; register32          ; work         ;
@@ -874,7 +877,7 @@ refer to the applicable agreement for further details.
 ;       |register32:r_t9|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_t9                                                                                                          ; register32          ; work         ;
 ;       |register32:r_v0|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_v0                                                                                                          ; register32          ; work         ;
 ;       |register32:r_v1|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerFile:inst1asdzxc|register32:r_v1                                                                                                          ; register32          ; work         ;
-;    |registerIDEX:inst35|                     ; 3 (3)               ; 273 (24)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerIDEX:inst35                                                                                                                               ; registerIDEX        ; work         ;
+;    |registerIDEX:inst35|                     ; 3 (3)               ; 274 (25)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerIDEX:inst35                                                                                                                               ; registerIDEX        ; work         ;
 ;       |register32:regA2|                     ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerIDEX:inst35|register32:regA2                                                                                                              ; register32          ; work         ;
 ;       |register32:regB2|                     ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerIDEX:inst35|register32:regB2                                                                                                              ; register32          ; work         ;
 ;       |register32:regPC2|                    ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerIDEX:inst35|register32:regPC2                                                                                                             ; register32          ; work         ;
@@ -895,7 +898,7 @@ refer to the applicable agreement for further details.
 ;       |register32:regPC2|                    ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerIFID:inst|register32:regPC2                                                                                                               ; register32          ; work         ;
 ;       |registerClear:inst1|                  ; 1 (1)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerIFID:inst|registerClear:inst1                                                                                                             ; registerClear       ; work         ;
 ;       |registerClear:inst2|                  ; 1 (1)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerIFID:inst|registerClear:inst2                                                                                                             ; registerClear       ; work         ;
-;    |registerMEMWB:inst33|                    ; 0 (0)               ; 142 (4)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerMEMWB:inst33                                                                                                                              ; registerMEMWB       ; work         ;
+;    |registerMEMWB:inst33|                    ; 0 (0)               ; 144 (6)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerMEMWB:inst33                                                                                                                              ; registerMEMWB       ; work         ;
 ;       |register32:regALU1|                   ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerMEMWB:inst33|register32:regALU1                                                                                                           ; register32          ; work         ;
 ;       |register32:regALU2|                   ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerMEMWB:inst33|register32:regALU2                                                                                                           ; register32          ; work         ;
 ;       |register32:regMem1|                   ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|registerMEMWB:inst33|register32:regMem1                                                                                                           ; register32          ; work         ;
@@ -911,8 +914,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+---------------------------------------------+
 ; Name                                                                                                                                    ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF                                         ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+---------------------------------------------+
-; data_memory:inst24|altsyncram:altsyncram_component|altsyncram_80u3:auto_generated|ALTSYNCRAM                                            ; AUTO ; Simple Dual Port ; 256          ; 32           ; 256          ; 32           ; 8192    ; ../../apresentacao-dia4/nivel1dia4_data.mif ;
-; instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated|ALTSYNCRAM                                      ; AUTO ; ROM              ; 65536        ; 32           ; --           ; --           ; 2097152 ; ../../apresentacao-dia4/nivel1dia4_code.mif ;
+; data_memory:inst24|altsyncram:altsyncram_component|altsyncram_hit3:auto_generated|ALTSYNCRAM                                            ; AUTO ; Simple Dual Port ; 256          ; 32           ; 256          ; 32           ; 8192    ; ../../apresentacao-dia4/nivel2data.hex      ;
+; instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated|ALTSYNCRAM                                      ; AUTO ; ROM              ; 65536        ; 32           ; --           ; --           ; 2097152 ; ../../apresentacao-dia4/nivel2dia4_code.mif ;
 ; registerEXMEM:inst20|register32:WriteReg1|altshift_taps:ff31_rtl_0|shift_taps_56m:auto_generated|altsyncram_ld81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 2            ; 33           ; 2            ; 33           ; 66      ; None                                        ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+---------------------------------------------+
 
@@ -942,15 +945,13 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------+------------------------+
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerFile:inst1asdzxc|mux32:inst                                                   ; mux32.vhd              ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|registerFile:inst1asdzxc|mux32:inst1                                                  ; mux32.vhd              ;
+; Altera ; LPM_CONSTANT ; 18.0    ; N/A          ; N/A          ; |lab2|registerFile:inst1asdzxc|sp_constant:inst3                                            ; sp_constant.vhd        ;
 ; Altera ; LPM_DECODE   ; 13.0    ; N/A          ; N/A          ; |lab2|registerFile:inst1asdzxc|decodeerr:inst4                                              ; decodeerr.vhd          ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab2|registerFile:inst1asdzxc|const0:inst9                                                 ; const0.vhd             ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|pc_mux:inst2                                                                          ; pc_mux.vhd             ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|pcRegister:inst3|simple2mux:inst2                                                     ; simple2mux.vhd         ;
 ; Altera ; ROM: 1-PORT  ; 18.0    ; N/A          ; N/A          ; |lab2|instruction_memory:inst4                                                              ; instruction_memory.vhd ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|reg_dst_mux:inst5                                                                     ; reg_dst_mux.vhd        ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst6|compare_forward:inst                                                 ; compare_forward.vhd    ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst6|compare_forward:inst2                                                ; compare_forward.vhd    ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst6|compare_forward:inst4                                                ; compare_forward.vhd    ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst6|compare_forward:inst5                                                ; compare_forward.vhd    ;
 ; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |lab2|branch_add:inst9                                                                      ; branch_add.vhd         ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|mem_to_reg_mux:inst10                                                                 ; mem_to_reg_mux.vhd     ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|pc_mux:inst11                                                                         ; pc_mux.vhd             ;
@@ -1010,6 +1011,10 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control_clk:inst39                                                                    ; control_clk.vhd        ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab2|control_clk:inst40                                                                    ; control_clk.vhd        ;
 ; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab2|clear_clock:inst41                                                                    ; clear_clock.vhd        ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst43|compare_forward:inst                                                ; compare_forward.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst43|compare_forward:inst2                                               ; compare_forward.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst43|compare_forward:inst4                                               ; compare_forward.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |lab2|forwarding:inst43|compare_forward:inst5                                               ; compare_forward.vhd    ;
 ; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab2|Not4Detector:inst46|const16:inst12                                                    ; const16.vhd            ;
 ; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab2|Not4Detector:inst46|const0:inst13                                                     ; const0.vhd             ;
 ; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |lab2|exception3:inst58                                                                     ; exception3.vhd         ;
@@ -1055,6 +1060,38 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; registerFile:inst1asdzxc|registerZero:r_zero|ff24 ; Stuck at GND due to stuck port clear                      ;
 ; registerFile:inst1asdzxc|registerZero:r_zero|ff32 ; Stuck at GND due to stuck port clear                      ;
 ; registerEXMEM:inst20|reg28                        ; Stuck at GND due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff1      ; Stuck at GND due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff9      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff17     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff25     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff2      ; Stuck at GND due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff10     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff18     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff26     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff3      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff11     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff19     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff27     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff4      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|f12      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff20     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff28     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff5      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff13     ; Stuck at GND due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff21     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff29     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff6      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff14     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff22     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff30     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff7      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff15     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff23     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff31     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff8      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|f16      ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff24     ; Stuck at VCC due to stuck port data_in                    ;
+; registerFile:inst1asdzxc|register32:r_sp|ff32     ; Stuck at GND due to stuck port data_in                    ;
 ; registerEXMEM:inst20|reg27                        ; Stuck at GND due to stuck port data_in                    ;
 ; registerMEMWB:inst33|reg28                        ; Stuck at GND due to stuck port data_in                    ;
 ; registerIDEX:inst35|reg30                         ; Stuck at GND due to stuck port data_in                    ;
@@ -1330,8 +1367,9 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; CausaInt:inst30|register32:WriteReg1|ff7          ; Merged with CausaInt:inst30|register32:WriteReg1|f12      ;
 ; CausaInt:inst30|register32:WriteReg1|ff8          ; Merged with CausaInt:inst30|register32:WriteReg1|f12      ;
 ; CausaInt:inst30|register32:WriteReg1|ff9          ; Merged with CausaInt:inst30|register32:WriteReg1|f12      ;
+; registerIDEX:inst35|reg7                          ; Merged with registerIDEX:inst35|reg3                      ;
 ; CausaInt:inst30|register32:WriteReg1|f12          ; Stuck at GND due to stuck port data_in                    ;
-; Total Number of Removed Registers = 309           ;                                                           ;
+; Total Number of Removed Registers = 342           ;                                                           ;
 +---------------------------------------------------+-----------------------------------------------------------+
 
 
@@ -1479,12 +1517,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1818  ;
+; Total registers                              ; 1791  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 29    ;
 ; Number of registers using Asynchronous Clear ; 198   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1090  ;
+; Number of registers using Clock Enable       ; 1058  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1645,7 +1683,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 
 
 +----------------------------------------------------------------------------------------------------------+
-; Source assignments for data_memory:inst24|altsyncram:altsyncram_component|altsyncram_80u3:auto_generated ;
+; Source assignments for data_memory:inst24|altsyncram:altsyncram_component|altsyncram_hit3:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                         ;
 +---------------------------------+--------------------+------+--------------------------------------------+
@@ -1654,7 +1692,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Source assignments for instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated ;
+; Source assignments for instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                               ;
 +---------------------------------+--------------------+------+--------------------------------------------------+
@@ -2814,64 +2852,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: data_memory:inst24|altsyncram:altsyncram_component   ;
-+------------------------------------+---------------------------------------------+----------------+
-; Parameter Name                     ; Value                                       ; Type           ;
-+------------------------------------+---------------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                           ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                          ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                         ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                          ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                         ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                           ; Untyped        ;
-; OPERATION_MODE                     ; DUAL_PORT                                   ; Untyped        ;
-; WIDTH_A                            ; 32                                          ; Signed Integer ;
-; WIDTHAD_A                          ; 8                                           ; Signed Integer ;
-; NUMWORDS_A                         ; 256                                         ; Signed Integer ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                        ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                        ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                        ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                        ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                        ; Untyped        ;
-; WIDTH_B                            ; 32                                          ; Signed Integer ;
-; WIDTHAD_B                          ; 8                                           ; Signed Integer ;
-; NUMWORDS_B                         ; 256                                         ; Signed Integer ;
-; INDATA_REG_B                       ; CLOCK1                                      ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                      ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK0                                      ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK0                                      ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                      ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                        ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                        ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                        ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                        ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                        ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                        ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                           ; Signed Integer ;
-; WIDTH_BYTEENA_B                    ; 1                                           ; Signed Integer ;
-; RAM_BLOCK_TYPE                     ; AUTO                                        ; Untyped        ;
-; BYTE_SIZE                          ; 8                                           ; Signed Integer ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                    ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                        ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                        ; Untyped        ;
-; INIT_FILE                          ; ../../apresentacao-dia4/nivel1dia4_data.mif ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                      ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                           ; Signed Integer ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                      ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                                      ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                      ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                      ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                             ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                             ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                       ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                       ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                           ; Signed Integer ;
-; DEVICE_FAMILY                      ; Cyclone 10 LP                               ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_80u3                             ; Untyped        ;
-+------------------------------------+---------------------------------------------+----------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory:inst24|altsyncram:altsyncram_component ;
++------------------------------------+----------------------------------------+-------------------+
+; Parameter Name                     ; Value                                  ; Type              ;
++------------------------------------+----------------------------------------+-------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                      ; Untyped           ;
+; AUTO_CARRY_CHAINS                  ; ON                                     ; AUTO_CARRY        ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                    ; IGNORE_CARRY      ;
+; AUTO_CASCADE_CHAINS                ; ON                                     ; AUTO_CASCADE      ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                    ; IGNORE_CASCADE    ;
+; WIDTH_BYTEENA                      ; 1                                      ; Untyped           ;
+; OPERATION_MODE                     ; DUAL_PORT                              ; Untyped           ;
+; WIDTH_A                            ; 32                                     ; Signed Integer    ;
+; WIDTHAD_A                          ; 8                                      ; Signed Integer    ;
+; NUMWORDS_A                         ; 256                                    ; Signed Integer    ;
+; OUTDATA_REG_A                      ; UNREGISTERED                           ; Untyped           ;
+; ADDRESS_ACLR_A                     ; NONE                                   ; Untyped           ;
+; OUTDATA_ACLR_A                     ; NONE                                   ; Untyped           ;
+; WRCONTROL_ACLR_A                   ; NONE                                   ; Untyped           ;
+; INDATA_ACLR_A                      ; NONE                                   ; Untyped           ;
+; BYTEENA_ACLR_A                     ; NONE                                   ; Untyped           ;
+; WIDTH_B                            ; 32                                     ; Signed Integer    ;
+; WIDTHAD_B                          ; 8                                      ; Signed Integer    ;
+; NUMWORDS_B                         ; 256                                    ; Signed Integer    ;
+; INDATA_REG_B                       ; CLOCK1                                 ; Untyped           ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                 ; Untyped           ;
+; RDCONTROL_REG_B                    ; CLOCK0                                 ; Untyped           ;
+; ADDRESS_REG_B                      ; CLOCK0                                 ; Untyped           ;
+; OUTDATA_REG_B                      ; UNREGISTERED                           ; Untyped           ;
+; BYTEENA_REG_B                      ; CLOCK1                                 ; Untyped           ;
+; INDATA_ACLR_B                      ; NONE                                   ; Untyped           ;
+; WRCONTROL_ACLR_B                   ; NONE                                   ; Untyped           ;
+; ADDRESS_ACLR_B                     ; NONE                                   ; Untyped           ;
+; OUTDATA_ACLR_B                     ; NONE                                   ; Untyped           ;
+; RDCONTROL_ACLR_B                   ; NONE                                   ; Untyped           ;
+; BYTEENA_ACLR_B                     ; NONE                                   ; Untyped           ;
+; WIDTH_BYTEENA_A                    ; 1                                      ; Signed Integer    ;
+; WIDTH_BYTEENA_B                    ; 1                                      ; Signed Integer    ;
+; RAM_BLOCK_TYPE                     ; AUTO                                   ; Untyped           ;
+; BYTE_SIZE                          ; 8                                      ; Signed Integer    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                               ; Untyped           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                   ; Untyped           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                   ; Untyped           ;
+; INIT_FILE                          ; ../../apresentacao-dia4/nivel2data.hex ; Untyped           ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                 ; Untyped           ;
+; MAXIMUM_DEPTH                      ; 0                                      ; Signed Integer    ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                 ; Untyped           ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                                 ; Untyped           ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                 ; Untyped           ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                 ; Untyped           ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                        ; Untyped           ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                        ; Untyped           ;
+; ENABLE_ECC                         ; FALSE                                  ; Untyped           ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                  ; Untyped           ;
+; WIDTH_ECCSTATUS                    ; 3                                      ; Signed Integer    ;
+; DEVICE_FAMILY                      ; Cyclone 10 LP                          ; Untyped           ;
+; CBXI_PARAMETER                     ; altsyncram_hit3                        ; Untyped           ;
++------------------------------------+----------------------------------------+-------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2894,32 +2932,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component ;
-+------------------------+---------------+-----------------------------------------------------------------------------+
-; Parameter Name         ; Value         ; Type                                                                        ;
-+------------------------+---------------+-----------------------------------------------------------------------------+
-; lpm_width              ; 5             ; Signed Integer                                                              ;
-; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                                     ;
-; LPM_PIPELINE           ; 0             ; Untyped                                                                     ;
-; CHAIN_SIZE             ; 8             ; Untyped                                                                     ;
-; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                                     ;
-; CARRY_CHAIN            ; MANUAL        ; Untyped                                                                     ;
-; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                                     ;
-; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                          ;
-; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                                        ;
-; DEVICE_FAMILY          ; Cyclone 10 LP ; Untyped                                                                     ;
-; CBXI_PARAMETER         ; cmpr_llg      ; Untyped                                                                     ;
-; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                                ;
-; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                                ;
-; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                              ;
-+------------------------+---------------+-----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: forwarding:inst6|compare_forward:inst4|lpm_compare:LPM_COMPARE_component ;
+; Parameter Settings for User Entity Instance: forwarding:inst43|compare_forward:inst|lpm_compare:LPM_COMPARE_component ;
 +------------------------+---------------+------------------------------------------------------------------------------+
 ; Parameter Name         ; Value         ; Type                                                                         ;
 +------------------------+---------------+------------------------------------------------------------------------------+
@@ -2942,51 +2956,75 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: forwarding:inst6|compare_forward:inst2|lpm_compare:LPM_COMPARE_component ;
-+------------------------+---------------+------------------------------------------------------------------------------+
-; Parameter Name         ; Value         ; Type                                                                         ;
-+------------------------+---------------+------------------------------------------------------------------------------+
-; lpm_width              ; 5             ; Signed Integer                                                               ;
-; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                                      ;
-; LPM_PIPELINE           ; 0             ; Untyped                                                                      ;
-; CHAIN_SIZE             ; 8             ; Untyped                                                                      ;
-; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                                      ;
-; CARRY_CHAIN            ; MANUAL        ; Untyped                                                                      ;
-; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                                      ;
-; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                           ;
-; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                                         ;
-; DEVICE_FAMILY          ; Cyclone 10 LP ; Untyped                                                                      ;
-; CBXI_PARAMETER         ; cmpr_llg      ; Untyped                                                                      ;
-; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                                 ;
-; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                               ;
-+------------------------+---------------+------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: forwarding:inst43|compare_forward:inst4|lpm_compare:LPM_COMPARE_component ;
++------------------------+---------------+-------------------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                                          ;
++------------------------+---------------+-------------------------------------------------------------------------------+
+; lpm_width              ; 5             ; Signed Integer                                                                ;
+; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                                       ;
+; LPM_PIPELINE           ; 0             ; Untyped                                                                       ;
+; CHAIN_SIZE             ; 8             ; Untyped                                                                       ;
+; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                                       ;
+; CARRY_CHAIN            ; MANUAL        ; Untyped                                                                       ;
+; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                                       ;
+; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                            ;
+; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                                          ;
+; DEVICE_FAMILY          ; Cyclone 10 LP ; Untyped                                                                       ;
+; CBXI_PARAMETER         ; cmpr_llg      ; Untyped                                                                       ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                                ;
++------------------------+---------------+-------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: forwarding:inst6|compare_forward:inst5|lpm_compare:LPM_COMPARE_component ;
-+------------------------+---------------+------------------------------------------------------------------------------+
-; Parameter Name         ; Value         ; Type                                                                         ;
-+------------------------+---------------+------------------------------------------------------------------------------+
-; lpm_width              ; 5             ; Signed Integer                                                               ;
-; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                                      ;
-; LPM_PIPELINE           ; 0             ; Untyped                                                                      ;
-; CHAIN_SIZE             ; 8             ; Untyped                                                                      ;
-; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                                      ;
-; CARRY_CHAIN            ; MANUAL        ; Untyped                                                                      ;
-; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                                      ;
-; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                           ;
-; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                                         ;
-; DEVICE_FAMILY          ; Cyclone 10 LP ; Untyped                                                                      ;
-; CBXI_PARAMETER         ; cmpr_llg      ; Untyped                                                                      ;
-; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                                 ;
-; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                               ;
-+------------------------+---------------+------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: forwarding:inst43|compare_forward:inst2|lpm_compare:LPM_COMPARE_component ;
++------------------------+---------------+-------------------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                                          ;
++------------------------+---------------+-------------------------------------------------------------------------------+
+; lpm_width              ; 5             ; Signed Integer                                                                ;
+; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                                       ;
+; LPM_PIPELINE           ; 0             ; Untyped                                                                       ;
+; CHAIN_SIZE             ; 8             ; Untyped                                                                       ;
+; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                                       ;
+; CARRY_CHAIN            ; MANUAL        ; Untyped                                                                       ;
+; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                                       ;
+; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                            ;
+; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                                          ;
+; DEVICE_FAMILY          ; Cyclone 10 LP ; Untyped                                                                       ;
+; CBXI_PARAMETER         ; cmpr_llg      ; Untyped                                                                       ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                                ;
++------------------------+---------------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: forwarding:inst43|compare_forward:inst5|lpm_compare:LPM_COMPARE_component ;
++------------------------+---------------+-------------------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                                          ;
++------------------------+---------------+-------------------------------------------------------------------------------+
+; lpm_width              ; 5             ; Signed Integer                                                                ;
+; LPM_REPRESENTATION     ; UNSIGNED      ; Untyped                                                                       ;
+; LPM_PIPELINE           ; 0             ; Untyped                                                                       ;
+; CHAIN_SIZE             ; 8             ; Untyped                                                                       ;
+; ONE_INPUT_IS_CONSTANT  ; NO            ; Untyped                                                                       ;
+; CARRY_CHAIN            ; MANUAL        ; Untyped                                                                       ;
+; CASCADE_CHAIN          ; MANUAL        ; Untyped                                                                       ;
+; CARRY_CHAIN_LENGTH     ; 48            ; CARRY_CHAIN_LENGTH                                                            ;
+; CASCADE_CHAIN_LENGTH   ; 2             ; CASCADE_CHAIN_LENGTH                                                          ;
+; DEVICE_FAMILY          ; Cyclone 10 LP ; Untyped                                                                       ;
+; CBXI_PARAMETER         ; cmpr_llg      ; Untyped                                                                       ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                                ;
++------------------------+---------------+-------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3373,7 +3411,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ; Untyped            ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                        ; Untyped            ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                        ; Untyped            ;
-; INIT_FILE                          ; ../../apresentacao-dia4/nivel1dia4_code.mif ; Untyped            ;
+; INIT_FILE                          ; ../../apresentacao-dia4/nivel2dia4_code.mif ; Untyped            ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                                      ; Untyped            ;
 ; MAXIMUM_DEPTH                      ; 0                                           ; Signed Integer     ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS                                      ; Untyped            ;
@@ -3386,7 +3424,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                       ; Untyped            ;
 ; WIDTH_ECCSTATUS                    ; 3                                           ; Signed Integer     ;
 ; DEVICE_FAMILY                      ; Cyclone 10 LP                               ; Untyped            ;
-; CBXI_PARAMETER                     ; altsyncram_6rs3                             ; Untyped            ;
+; CBXI_PARAMETER                     ; altsyncram_7rs3                             ; Untyped            ;
 +------------------------------------+---------------------------------------------+--------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -4436,28 +4474,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 1547                        ;
-; cycloneiii_ff         ; 1818                        ;
+; boundary_port         ; 1687                        ;
+; cycloneiii_ff         ; 1791                        ;
 ;     CLR               ; 198                         ;
-;     ENA               ; 1061                        ;
+;     ENA               ; 1029                        ;
 ;     ENA SLD           ; 29                          ;
-;     plain             ; 530                         ;
-; cycloneiii_lcell_comb ; 4980                        ;
+;     plain             ; 535                         ;
+; cycloneiii_lcell_comb ; 4934                        ;
 ;     arith             ; 938                         ;
 ;         2 data inputs ; 131                         ;
 ;         3 data inputs ; 807                         ;
-;     normal            ; 4042                        ;
-;         0 data inputs ; 32                          ;
+;     normal            ; 3996                        ;
+;         0 data inputs ; 33                          ;
 ;         1 data inputs ; 13                          ;
-;         2 data inputs ; 66                          ;
-;         3 data inputs ; 831                         ;
-;         4 data inputs ; 3100                        ;
+;         2 data inputs ; 73                          ;
+;         3 data inputs ; 842                         ;
+;         4 data inputs ; 3035                        ;
 ; cycloneiii_mac_mult   ; 4                           ;
 ; cycloneiii_mac_out    ; 4                           ;
 ; cycloneiii_ram_block  ; 321                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 134.50                      ;
-; Average LUT depth     ; 46.59                       ;
+; Max LUT depth         ; 135.50                      ;
+; Average LUT depth     ; 46.94                       ;
 +-----------------------+-----------------------------+
 
 
@@ -4466,7 +4504,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:41     ;
+; Top            ; 00:00:48     ;
 +----------------+--------------+
 
 
@@ -4476,7 +4514,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 06 22:04:52 2018
+    Info: Processing started: Fri Dec 07 11:47:15 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off agoravai -c agoravai
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -4734,6 +4772,7 @@ Info (12021): Found 4 design units, including 2 entities, in source file sp_cons
     Info (12023): Found entity 1: sp_constant_lpm_constant_oc9 File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/sp_constant.vhd Line: 43
     Info (12023): Found entity 2: sp_constant File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/sp_constant.vhd Line: 63
 Info (12127): Elaborating entity "lab2" for the top level hierarchy
+Warning (275011): Block or symbol "extend_jump" of instance "extends_jump" overlaps another block or symbol
 Warning (275011): Block or symbol "64sel32" of instance "inst44" overlaps another block or symbol
 Warning (275085): Found inconsistent dimensions for element "JumpID"
 Warning (275085): Found inconsistent dimensions for element "WriteReg/EX"
@@ -5056,7 +5095,7 @@ Info (12133): Instantiated megafunction "data_memory:inst24|altsyncram:altsyncra
     Info (12134): Parameter "indata_aclr_a" = "UNUSED"
     Info (12134): Parameter "indata_aclr_b" = "NONE"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "../../apresentacao-dia4/nivel1dia4_data.mif"
+    Info (12134): Parameter "init_file" = "../../apresentacao-dia4/nivel2data.hex"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
     Info (12134): Parameter "numwords_a" = "256"
@@ -5086,21 +5125,21 @@ Info (12133): Instantiated megafunction "data_memory:inst24|altsyncram:altsyncra
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_80u3.tdf
-    Info (12023): Found entity 1: altsyncram_80u3 File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_80u3.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_80u3" for hierarchy "data_memory:inst24|altsyncram:altsyncram_component|altsyncram_80u3:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hit3.tdf
+    Info (12023): Found entity 1: altsyncram_hit3 File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_hit3.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_hit3" for hierarchy "data_memory:inst24|altsyncram:altsyncram_component|altsyncram_hit3:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "mem_to_reg_mux" for hierarchy "mem_to_reg_mux:inst10"
-Info (12128): Elaborating entity "forwarding" for hierarchy "forwarding:inst6"
-Info (12128): Elaborating entity "compare_forward" for hierarchy "forwarding:inst6|compare_forward:inst"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/compare_forward.vhd Line: 74
-Info (12130): Elaborated megafunction instantiation "forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/compare_forward.vhd Line: 74
-Info (12133): Instantiated megafunction "forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/compare_forward.vhd Line: 74
+Info (12128): Elaborating entity "forwarding" for hierarchy "forwarding:inst43"
+Info (12128): Elaborating entity "compare_forward" for hierarchy "forwarding:inst43|compare_forward:inst"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "forwarding:inst43|compare_forward:inst|lpm_compare:LPM_COMPARE_component" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/compare_forward.vhd Line: 74
+Info (12130): Elaborated megafunction instantiation "forwarding:inst43|compare_forward:inst|lpm_compare:LPM_COMPARE_component" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/compare_forward.vhd Line: 74
+Info (12133): Instantiated megafunction "forwarding:inst43|compare_forward:inst|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/compare_forward.vhd Line: 74
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_llg.tdf
     Info (12023): Found entity 1: cmpr_llg File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/cmpr_llg.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_llg" for hierarchy "forwarding:inst6|compare_forward:inst|lpm_compare:LPM_COMPARE_component|cmpr_llg:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
+Info (12128): Elaborating entity "cmpr_llg" for hierarchy "forwarding:inst43|compare_forward:inst|lpm_compare:LPM_COMPARE_component|cmpr_llg:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
 Info (12128): Elaborating entity "origALU_mux" for hierarchy "origALU_mux:inst19"
 Info (12128): Elaborating entity "control" for hierarchy "control:inst15"
 Warning (275011): Block or symbol "NOT" of instance "inst31" overlaps another block or symbol
@@ -5164,7 +5203,7 @@ Info (12133): Instantiated megafunction "instruction_memory:inst4|altsyncram:alt
     Info (12134): Parameter "indata_aclr_a" = "UNUSED"
     Info (12134): Parameter "indata_aclr_b" = "NONE"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "../../apresentacao-dia4/nivel1dia4_code.mif"
+    Info (12134): Parameter "init_file" = "../../apresentacao-dia4/nivel2dia4_code.mif"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
     Info (12134): Parameter "numwords_a" = "65536"
@@ -5194,15 +5233,15 @@ Info (12133): Instantiated megafunction "instruction_memory:inst4|altsyncram:alt
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6rs3.tdf
-    Info (12023): Found entity 1: altsyncram_6rs3 File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_6rs3.tdf Line: 31
-Info (12128): Elaborating entity "altsyncram_6rs3" for hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7rs3.tdf
+    Info (12023): Found entity 1: altsyncram_7rs3 File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_7rs3.tdf Line: 31
+Info (12128): Elaborating entity "altsyncram_7rs3" for hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_d8a.tdf
     Info (12023): Found entity 1: decode_d8a File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/decode_d8a.tdf Line: 22
-Info (12128): Elaborating entity "decode_d8a" for hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated|decode_d8a:rden_decode" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_6rs3.tdf Line: 39
+Info (12128): Elaborating entity "decode_d8a" for hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated|decode_d8a:rden_decode" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_7rs3.tdf Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_hob.tdf
     Info (12023): Found entity 1: mux_hob File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/mux_hob.tdf Line: 22
-Info (12128): Elaborating entity "mux_hob" for hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_6rs3:auto_generated|mux_hob:mux2" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_6rs3.tdf Line: 40
+Info (12128): Elaborating entity "mux_hob" for hierarchy "instruction_memory:inst4|altsyncram:altsyncram_component|altsyncram_7rs3:auto_generated|mux_hob:mux2" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/altsyncram_7rs3.tdf Line: 40
 Info (12128): Elaborating entity "pcRegister" for hierarchy "pcRegister:inst3"
 Info (12128): Elaborating entity "simple2mux" for hierarchy "pcRegister:inst3|simple2mux:inst2"
 Info (12128): Elaborating entity "pc_mux" for hierarchy "pc_mux:inst11"
@@ -5260,6 +5299,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
     Info (12023): Found entity 1: mux_mae File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/db/mux_mae.tdf Line: 22
 Info (12128): Elaborating entity "mux_mae" for hierarchy "registerFile:inst1asdzxc|mux32:inst|LPM_MUX:LPM_MUX_component|mux_mae:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "registerZero" for hierarchy "registerFile:inst1asdzxc|registerZero:r_zero"
+Info (12128): Elaborating entity "sp_constant" for hierarchy "registerFile:inst1asdzxc|sp_constant:inst3"
+Info (12128): Elaborating entity "sp_constant_lpm_constant_oc9" for hierarchy "registerFile:inst1asdzxc|sp_constant:inst3|sp_constant_lpm_constant_oc9:sp_constant_lpm_constant_oc9_component" File: C:/Users/eduar/Documents/OAC/t2/Trabalho Final_0/sp_constant.vhd Line: 86
 Info (12128): Elaborating entity "link_mux" for hierarchy "link_mux:inst38"
 Info (12128): Elaborating entity "reg_dst_mux" for hierarchy "reg_dst_mux:inst5"
 Info (12128): Elaborating entity "register_ra" for hierarchy "register_ra:inst28"
@@ -5414,6 +5455,38 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "saidaMemDados[2]" is stuck at GND
     Warning (13410): Pin "saidaMemDados[1]" is stuck at GND
     Warning (13410): Pin "saidaMemDados[0]" is stuck at GND
+    Warning (13410): Pin "sp[31]" is stuck at GND
+    Warning (13410): Pin "sp[30]" is stuck at VCC
+    Warning (13410): Pin "sp[29]" is stuck at VCC
+    Warning (13410): Pin "sp[28]" is stuck at VCC
+    Warning (13410): Pin "sp[27]" is stuck at VCC
+    Warning (13410): Pin "sp[26]" is stuck at VCC
+    Warning (13410): Pin "sp[25]" is stuck at VCC
+    Warning (13410): Pin "sp[24]" is stuck at VCC
+    Warning (13410): Pin "sp[23]" is stuck at VCC
+    Warning (13410): Pin "sp[22]" is stuck at VCC
+    Warning (13410): Pin "sp[21]" is stuck at VCC
+    Warning (13410): Pin "sp[20]" is stuck at VCC
+    Warning (13410): Pin "sp[19]" is stuck at VCC
+    Warning (13410): Pin "sp[18]" is stuck at VCC
+    Warning (13410): Pin "sp[17]" is stuck at VCC
+    Warning (13410): Pin "sp[16]" is stuck at VCC
+    Warning (13410): Pin "sp[15]" is stuck at VCC
+    Warning (13410): Pin "sp[14]" is stuck at VCC
+    Warning (13410): Pin "sp[13]" is stuck at VCC
+    Warning (13410): Pin "sp[12]" is stuck at GND
+    Warning (13410): Pin "sp[11]" is stuck at VCC
+    Warning (13410): Pin "sp[10]" is stuck at VCC
+    Warning (13410): Pin "sp[9]" is stuck at VCC
+    Warning (13410): Pin "sp[8]" is stuck at VCC
+    Warning (13410): Pin "sp[7]" is stuck at VCC
+    Warning (13410): Pin "sp[6]" is stuck at VCC
+    Warning (13410): Pin "sp[5]" is stuck at VCC
+    Warning (13410): Pin "sp[4]" is stuck at VCC
+    Warning (13410): Pin "sp[3]" is stuck at VCC
+    Warning (13410): Pin "sp[2]" is stuck at VCC
+    Warning (13410): Pin "sp[1]" is stuck at GND
+    Warning (13410): Pin "sp[0]" is stuck at GND
     Warning (13410): Pin "zero[31]" is stuck at GND
     Warning (13410): Pin "zero[30]" is stuck at GND
     Warning (13410): Pin "zero[29]" is stuck at GND
@@ -5450,16 +5523,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 128 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 8469 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8535 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 1545 output pins
-    Info (21061): Implemented 6593 logic cells
+    Info (21059): Implemented 1685 output pins
+    Info (21061): Implemented 6519 logic cells
     Info (21064): Implemented 321 RAM segments
     Info (21062): Implemented 8 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 177 warnings
-    Info: Peak virtual memory: 5079 megabytes
-    Info: Processing ended: Thu Dec 06 22:06:35 2018
-    Info: Elapsed time: 00:01:43
-    Info: Total CPU time (on all processors): 00:02:04
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 210 warnings
+    Info: Peak virtual memory: 5082 megabytes
+    Info: Processing ended: Fri Dec 07 11:49:15 2018
+    Info: Elapsed time: 00:02:00
+    Info: Total CPU time (on all processors): 00:02:24
 
 
